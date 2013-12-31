@@ -16366,14 +16366,14 @@ The GPIO Connector (P1):&lt;br&gt;
 <attribute name="VALUE" x="88.265" y="-37.465" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="DB" gate="-1" x="-53.34" y="134.62" rot="MR0"/>
-<instance part="DB" gate="-2" x="-50.8" y="88.9" rot="R180"/>
-<instance part="DB" gate="-3" x="-50.8" y="106.68" rot="R180"/>
-<instance part="DB" gate="-4" x="-50.8" y="43.18" rot="R180"/>
-<instance part="DB" gate="-5" x="-50.8" y="60.96" rot="R180"/>
-<instance part="DB" gate="-6" x="-50.8" y="-2.54" rot="R180"/>
-<instance part="DB" gate="-7" x="-50.8" y="15.24" rot="R180"/>
-<instance part="DB" gate="-8" x="-50.8" y="-48.26" rot="R180"/>
-<instance part="DB" gate="-9" x="-50.8" y="-30.48" rot="R180"/>
+<instance part="DB" gate="-2" x="-50.8" y="106.68" rot="R180"/>
+<instance part="DB" gate="-3" x="-50.8" y="88.9" rot="R180"/>
+<instance part="DB" gate="-4" x="-50.8" y="60.96" rot="R180"/>
+<instance part="DB" gate="-5" x="-50.8" y="43.18" rot="R180"/>
+<instance part="DB" gate="-6" x="-50.8" y="15.24" rot="R180"/>
+<instance part="DB" gate="-7" x="-50.8" y="-2.54" rot="R180"/>
+<instance part="DB" gate="-8" x="-50.8" y="-30.48" rot="R180"/>
+<instance part="DB" gate="-9" x="-50.8" y="-48.26" rot="R180"/>
 <instance part="DB" gate="-10" x="182.88" y="93.98"/>
 <instance part="DB" gate="-11" x="182.88" y="48.26"/>
 <instance part="DB" gate="-12" x="182.88" y="2.54"/>
@@ -17395,7 +17395,7 @@ The GPIO Connector (P1):&lt;br&gt;
 <wire x1="243.84" y1="-12.7" x2="243.84" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="N$36" class="0">
 <segment>
 <pinref part="EN" gate="A" pin="COL"/>
 <pinref part="EN_UP" gate="G$1" pin="1"/>
@@ -17645,7 +17645,7 @@ The GPIO Connector (P1):&lt;br&gt;
 <junction x="165.1" y="2.54"/>
 </segment>
 </net>
-<net name="N$81" class="0">
+<net name="N$92" class="0">
 <segment>
 <pinref part="ZHOME_OUT" gate="G$1" pin="2"/>
 <pinref part="DB" gate="-12" pin="F"/>
@@ -17886,54 +17886,6 @@ The GPIO Connector (P1):&lt;br&gt;
 <wire x1="142.24" y1="149.86" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$42" class="0">
-<segment>
-<pinref part="ADIR_IN" gate="G$1" pin="2"/>
-<pinref part="DB" gate="-9" pin="F"/>
-</segment>
-</net>
-<net name="N$43" class="0">
-<segment>
-<pinref part="ASTP_IN" gate="G$1" pin="2"/>
-<pinref part="DB" gate="-8" pin="F"/>
-</segment>
-</net>
-<net name="N$44" class="0">
-<segment>
-<pinref part="ZDIR_IN" gate="G$1" pin="2"/>
-<pinref part="DB" gate="-7" pin="F"/>
-</segment>
-</net>
-<net name="N$45" class="0">
-<segment>
-<pinref part="ZSTP_IN" gate="G$1" pin="2"/>
-<pinref part="DB" gate="-6" pin="F"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<pinref part="YDIR_IN" gate="G$1" pin="2"/>
-<pinref part="DB" gate="-5" pin="F"/>
-</segment>
-</net>
-<net name="N$49" class="0">
-<segment>
-<pinref part="YSTP_IN" gate="G$1" pin="2"/>
-<pinref part="DB" gate="-4" pin="F"/>
-</segment>
-</net>
-<net name="N$51" class="0">
-<segment>
-<pinref part="XDIR_IN" gate="G$1" pin="2"/>
-<pinref part="DB" gate="-3" pin="F"/>
-</segment>
-</net>
-<net name="N$52" class="0">
-<segment>
-<pinref part="XSTP_IN" gate="G$1" pin="2"/>
-<pinref part="DB" gate="-2" pin="F"/>
-</segment>
-</net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="RLED1" gate="G$1" pin="2"/>
@@ -18024,6 +17976,54 @@ The GPIO Connector (P1):&lt;br&gt;
 <pinref part="ZDRIVER" gate="G$1" pin="M0"/>
 <pinref part="ZSET" gate="A" pin="5"/>
 <wire x1="22.86" y1="-5.08" x2="35.56" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="XSTP_IN" gate="G$1" pin="2"/>
+<pinref part="DB" gate="-3" pin="F"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="XDIR_IN" gate="G$1" pin="2"/>
+<pinref part="DB" gate="-2" pin="F"/>
+</segment>
+</net>
+<net name="N$44" class="0">
+<segment>
+<pinref part="YSTP_IN" gate="G$1" pin="2"/>
+<pinref part="DB" gate="-5" pin="F"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="YDIR_IN" gate="G$1" pin="2"/>
+<pinref part="DB" gate="-4" pin="F"/>
+</segment>
+</net>
+<net name="N$84" class="0">
+<segment>
+<pinref part="ZSTP_IN" gate="G$1" pin="2"/>
+<pinref part="DB" gate="-7" pin="F"/>
+</segment>
+</net>
+<net name="N$49" class="0">
+<segment>
+<pinref part="ZDIR_IN" gate="G$1" pin="2"/>
+<pinref part="DB" gate="-6" pin="F"/>
+</segment>
+</net>
+<net name="N$51" class="0">
+<segment>
+<pinref part="ASTP_IN" gate="G$1" pin="2"/>
+<pinref part="DB" gate="-9" pin="F"/>
+</segment>
+</net>
+<net name="N$52" class="0">
+<segment>
+<pinref part="ADIR_IN" gate="G$1" pin="2"/>
+<pinref part="DB" gate="-8" pin="F"/>
 </segment>
 </net>
 </nets>

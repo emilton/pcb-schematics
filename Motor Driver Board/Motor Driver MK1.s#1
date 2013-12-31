@@ -16274,7 +16274,6 @@ The GPIO Connector (P1):&lt;br&gt;
 <part name="P+22" library="supply1" deviceset="VCC" device=""/>
 <part name="P+23" library="supply1" deviceset="VCC" device=""/>
 <part name="P+24" library="supply1" deviceset="VCC" device=""/>
-<part name="AC3" library="rcl" deviceset="C-US" device="C0805"/>
 <part name="RLED1" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
 <part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X1" device=""/>
@@ -16611,7 +16610,6 @@ The GPIO Connector (P1):&lt;br&gt;
 <instance part="P+24" gate="VCC" x="165.1" y="-25.4" smashed="yes">
 <attribute name="VALUE" x="165.1" y="-22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="AC3" gate="G$1" x="236.22" y="132.08"/>
 <instance part="RLED1" gate="G$1" x="243.84" y="137.16"/>
 <instance part="LED2" gate="G$1" x="251.46" y="132.08"/>
 <instance part="JP1" gate="G$1" x="20.32" y="144.78" rot="R90"/>
@@ -17073,7 +17071,6 @@ The GPIO Connector (P1):&lt;br&gt;
 <wire x1="220.98" y1="119.38" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="251.46" y1="127" x2="251.46" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="AC3" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="124.46" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="127" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
@@ -17605,7 +17602,7 @@ The GPIO Connector (P1):&lt;br&gt;
 <wire x1="180.34" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="XHOME_UP" class="0">
+<net name="N$64" class="0">
 <segment>
 <pinref part="XHOM" gate="A" pin="COL"/>
 <pinref part="XHOME_OUT" gate="G$1" pin="1"/>
@@ -17616,7 +17613,7 @@ The GPIO Connector (P1):&lt;br&gt;
 <junction x="165.1" y="93.98"/>
 </segment>
 </net>
-<net name="N$69" class="0">
+<net name="N$87" class="0">
 <segment>
 <pinref part="YHOM" gate="A" pin="COL"/>
 <pinref part="YHOME_OUT" gate="G$1" pin="1"/>
@@ -17634,7 +17631,7 @@ The GPIO Connector (P1):&lt;br&gt;
 <wire x1="180.34" y1="48.26" x2="177.8" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$75" class="0">
+<net name="N$89" class="0">
 <segment>
 <pinref part="ZHOM" gate="A" pin="COL"/>
 <pinref part="ZHOME_OUT" gate="G$1" pin="1"/>
@@ -17659,7 +17656,7 @@ The GPIO Connector (P1):&lt;br&gt;
 <wire x1="180.34" y1="-43.18" x2="177.8" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$78" class="0">
+<net name="N$48" class="0">
 <segment>
 <pinref part="AHOM" gate="A" pin="COL"/>
 <pinref part="AHOME_OUT" gate="G$1" pin="1"/>
@@ -17670,7 +17667,7 @@ The GPIO Connector (P1):&lt;br&gt;
 <junction x="165.1" y="-43.18"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="N$76" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="233.68" y1="101.6" x2="231.14" y2="101.6" width="0.1524" layer="91"/>
@@ -17683,7 +17680,6 @@ The GPIO Connector (P1):&lt;br&gt;
 <pinref part="IC1" gate="G$1" pin="VOUT"/>
 <pinref part="P+19" gate="VCC" pin="VCC"/>
 <wire x1="236.22" y1="139.7" x2="236.22" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="AC3" gate="G$1" pin="1"/>
 <wire x1="236.22" y1="137.16" x2="233.68" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="134.62" x2="236.22" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="RLED1" gate="G$1" pin="1"/>

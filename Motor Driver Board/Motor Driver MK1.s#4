@@ -17542,28 +17542,28 @@ The GPIO Connector (P1):&lt;br&gt;
 <pinref part="JP17" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$84" class="0">
+<net name="N$95" class="0">
 <segment>
 <pinref part="XOUT" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="XHOME_IN" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$83" class="0">
+<net name="N$91" class="0">
 <segment>
 <pinref part="YOUT" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="YHOME_IN" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="N$97" class="0">
 <segment>
 <pinref part="ZOUT" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="2.54" x2="132.08" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="ZHOME_IN" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$73" class="0">
+<net name="N$80" class="0">
 <segment>
 <pinref part="AOUT" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="-43.18" x2="132.08" y2="-43.18" width="0.1524" layer="91"/>

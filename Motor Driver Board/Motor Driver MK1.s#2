@@ -16164,10 +16164,10 @@ The GPIO Connector (P1):&lt;br&gt;
 <part name="ASTP" library="optocoupler" deviceset="PC817" device=""/>
 <part name="EN" library="optocoupler" deviceset="PC817" device=""/>
 <part name="FAULT" library="optocoupler" deviceset="PC817" device=""/>
-<part name="XHOME" library="optocoupler" deviceset="PC817" device=""/>
-<part name="YHOME" library="optocoupler" deviceset="PC817" device=""/>
-<part name="ZHOME" library="optocoupler" deviceset="PC817" device=""/>
-<part name="AHOME" library="optocoupler" deviceset="PC817" device=""/>
+<part name="XHOM" library="optocoupler" deviceset="PC817" device=""/>
+<part name="YHOM" library="optocoupler" deviceset="PC817" device=""/>
+<part name="ZHOM" library="optocoupler" deviceset="PC817" device=""/>
+<part name="AHOM" library="optocoupler" deviceset="PC817" device=""/>
 <part name="XDIR_UP" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
 <part name="XSTP_UP" library="resistor" deviceset="R-US_" device="R0805"/>
 <part name="YDIR_UP" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
@@ -16399,10 +16399,10 @@ The GPIO Connector (P1):&lt;br&gt;
 <instance part="ASTP" gate="A" x="-25.4" y="-50.8"/>
 <instance part="EN" gate="A" x="-25.4" y="132.08"/>
 <instance part="FAULT" gate="A" x="154.94" y="132.08"/>
-<instance part="XHOME" gate="A" x="154.94" y="91.44"/>
-<instance part="YHOME" gate="A" x="154.94" y="45.72"/>
-<instance part="ZHOME" gate="A" x="154.94" y="0"/>
-<instance part="AHOME" gate="A" x="154.94" y="-45.72"/>
+<instance part="XHOM" gate="A" x="154.94" y="91.44"/>
+<instance part="YHOM" gate="A" x="154.94" y="45.72"/>
+<instance part="ZHOM" gate="A" x="154.94" y="0"/>
+<instance part="AHOM" gate="A" x="154.94" y="-45.72"/>
 <instance part="XDIR_UP" gate="G$1" x="-10.16" y="114.3" rot="R90"/>
 <instance part="XSTP_UP" gate="G$1" x="-5.08" y="114.3" rot="MR90"/>
 <instance part="YDIR_UP" gate="G$1" x="-10.16" y="68.58" rot="R90"/>
@@ -17002,25 +17002,25 @@ The GPIO Connector (P1):&lt;br&gt;
 <pinref part="SUPPLY35" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="XHOME" gate="A" pin="C"/>
+<pinref part="XHOM" gate="A" pin="C"/>
 <wire x1="144.78" y1="88.9" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="88.9" x2="142.24" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="SUPPLY39" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="YHOME" gate="A" pin="C"/>
+<pinref part="YHOM" gate="A" pin="C"/>
 <wire x1="144.78" y1="43.18" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="43.18" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY41" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="ZHOME" gate="A" pin="C"/>
+<pinref part="ZHOM" gate="A" pin="C"/>
 <wire x1="144.78" y1="-2.54" x2="142.24" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="-2.54" x2="142.24" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="SUPPLY43" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="AHOME" gate="A" pin="C"/>
+<pinref part="AHOM" gate="A" pin="C"/>
 <wire x1="144.78" y1="-48.26" x2="142.24" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="-48.26" x2="142.24" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="SUPPLY45" gate="GND" pin="GND"/>
@@ -17337,25 +17337,25 @@ The GPIO Connector (P1):&lt;br&gt;
 <wire x1="165.1" y1="129.54" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="XHOME" gate="A" pin="EMIT"/>
+<pinref part="XHOM" gate="A" pin="EMIT"/>
 <wire x1="162.56" y1="88.9" x2="165.1" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="88.9" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="SUPPLY38" gate="G$1" pin="DGND"/>
 </segment>
 <segment>
-<pinref part="YHOME" gate="A" pin="EMIT"/>
+<pinref part="YHOM" gate="A" pin="EMIT"/>
 <wire x1="162.56" y1="43.18" x2="165.1" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="43.18" x2="165.1" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY40" gate="G$1" pin="DGND"/>
 </segment>
 <segment>
-<pinref part="ZHOME" gate="A" pin="EMIT"/>
+<pinref part="ZHOM" gate="A" pin="EMIT"/>
 <wire x1="162.56" y1="-2.54" x2="165.1" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="-2.54" x2="165.1" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="SUPPLY42" gate="G$1" pin="DGND"/>
 </segment>
 <segment>
-<pinref part="AHOME" gate="A" pin="EMIT"/>
+<pinref part="AHOM" gate="A" pin="EMIT"/>
 <wire x1="162.56" y1="-48.26" x2="165.1" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="-48.26" x2="165.1" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="SUPPLY44" gate="G$1" pin="DGND"/>
@@ -17573,28 +17573,28 @@ The GPIO Connector (P1):&lt;br&gt;
 <net name="N$70" class="0">
 <segment>
 <pinref part="XHOME_IN" gate="G$1" pin="1"/>
-<pinref part="XHOME" gate="A" pin="A"/>
+<pinref part="XHOM" gate="A" pin="A"/>
 <wire x1="144.78" y1="93.98" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$71" class="0">
 <segment>
 <pinref part="YHOME_IN" gate="G$1" pin="1"/>
-<pinref part="YHOME" gate="A" pin="A"/>
+<pinref part="YHOM" gate="A" pin="A"/>
 <wire x1="144.78" y1="48.26" x2="142.24" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$72" class="0">
 <segment>
 <pinref part="ZHOME_IN" gate="G$1" pin="1"/>
-<pinref part="ZHOME" gate="A" pin="A"/>
+<pinref part="ZHOM" gate="A" pin="A"/>
 <wire x1="144.78" y1="2.54" x2="142.24" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="AHOME_IN" gate="G$1" pin="1"/>
-<pinref part="AHOME" gate="A" pin="A"/>
+<pinref part="AHOM" gate="A" pin="A"/>
 <wire x1="144.78" y1="-43.18" x2="142.24" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17607,7 +17607,7 @@ The GPIO Connector (P1):&lt;br&gt;
 </net>
 <net name="XHOME_UP" class="0">
 <segment>
-<pinref part="XHOME" gate="A" pin="COL"/>
+<pinref part="XHOM" gate="A" pin="COL"/>
 <pinref part="XHOME_OUT" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="93.98" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="XHOME_UP" gate="G$1" pin="1"/>
@@ -17618,7 +17618,7 @@ The GPIO Connector (P1):&lt;br&gt;
 </net>
 <net name="N$69" class="0">
 <segment>
-<pinref part="YHOME" gate="A" pin="COL"/>
+<pinref part="YHOM" gate="A" pin="COL"/>
 <pinref part="YHOME_OUT" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="48.26" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="YHOME_UP" gate="G$1" pin="1"/>
@@ -17636,7 +17636,7 @@ The GPIO Connector (P1):&lt;br&gt;
 </net>
 <net name="N$75" class="0">
 <segment>
-<pinref part="ZHOME" gate="A" pin="COL"/>
+<pinref part="ZHOM" gate="A" pin="COL"/>
 <pinref part="ZHOME_OUT" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="2.54" x2="165.1" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="ZHOME_UP" gate="G$1" pin="1"/>
@@ -17661,7 +17661,7 @@ The GPIO Connector (P1):&lt;br&gt;
 </net>
 <net name="N$78" class="0">
 <segment>
-<pinref part="AHOME" gate="A" pin="COL"/>
+<pinref part="AHOM" gate="A" pin="COL"/>
 <pinref part="AHOME_OUT" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="-43.18" x2="165.1" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="AHOME_UP" gate="G$1" pin="1"/>

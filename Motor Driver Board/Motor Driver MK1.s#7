@@ -16323,6 +16323,9 @@ The GPIO Connector (P1):&lt;br&gt;
 <part name="P+22" library="supply1" deviceset="VCC" device=""/>
 <part name="P+23" library="supply1" deviceset="VCC" device=""/>
 <part name="P+24" library="supply1" deviceset="VCC" device=""/>
+<part name="AC3" library="rcl" deviceset="C-US" device="C0805"/>
+<part name="RLED1" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805"/>
 </parts>
 <sheets>
 <sheet>
@@ -16621,9 +16624,9 @@ The GPIO Connector (P1):&lt;br&gt;
 <instance part="U$1" gate="G$1" x="-109.22" y="111.76"/>
 <instance part="IC1" gate="G$1" x="220.98" y="137.16"/>
 <instance part="SUPPLY49" gate="1" x="205.74" y="137.16" rot="R90"/>
-<instance part="SUPPLY50" gate="GND" x="220.98" y="121.92"/>
-<instance part="P+19" gate="VCC" x="236.22" y="137.16" smashed="yes" rot="R270">
-<attribute name="VALUE" x="238.76" y="137.16" size="1.778" layer="96"/>
+<instance part="SUPPLY50" gate="GND" x="220.98" y="116.84"/>
+<instance part="P+19" gate="VCC" x="236.22" y="142.24" smashed="yes">
+<attribute name="VALUE" x="236.22" y="144.78" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+20" gate="VCC" x="165.1" y="152.4" smashed="yes">
 <attribute name="VALUE" x="165.1" y="154.94" size="1.778" layer="96" rot="R90"/>
@@ -16640,6 +16643,9 @@ The GPIO Connector (P1):&lt;br&gt;
 <instance part="P+24" gate="VCC" x="165.1" y="-25.4" smashed="yes">
 <attribute name="VALUE" x="165.1" y="-22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="AC3" gate="G$1" x="236.22" y="132.08"/>
+<instance part="RLED1" gate="G$1" x="243.84" y="137.16"/>
+<instance part="LED2" gate="G$1" x="251.46" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -17062,6 +17068,13 @@ The GPIO Connector (P1):&lt;br&gt;
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY50" gate="GND" pin="GND"/>
+<wire x1="220.98" y1="119.38" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="251.46" y1="127" x2="251.46" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="AC3" gate="G$1" pin="2"/>
+<wire x1="251.46" y1="124.46" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="127" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -17743,6 +17756,12 @@ The GPIO Connector (P1):&lt;br&gt;
 <segment>
 <pinref part="IC1" gate="G$1" pin="VOUT"/>
 <pinref part="P+19" gate="VCC" pin="VCC"/>
+<wire x1="236.22" y1="139.7" x2="236.22" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="AC3" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="137.16" x2="233.68" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="134.62" x2="236.22" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="RLED1" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="137.16" x2="238.76" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="FAULT_UP" gate="G$1" pin="2"/>
@@ -17974,6 +17993,14 @@ The GPIO Connector (P1):&lt;br&gt;
 <segment>
 <pinref part="XSTP_IN" gate="G$1" pin="2"/>
 <pinref part="DB" gate="-2" pin="F"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="RLED1" gate="G$1" pin="2"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="248.92" y1="137.16" x2="251.46" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="137.16" x2="251.46" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
