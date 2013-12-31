@@ -16295,6 +16295,14 @@ The GPIO Connector (P1):&lt;br&gt;
 <part name="JP16" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="JP17" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="JP18" library="pinhead" deviceset="PINHD-1X1" device=""/>
+<part name="AC4" library="rcl" deviceset="C-US" device="C0805"/>
+<part name="AC5" library="rcl" deviceset="C-US" device="C0805"/>
+<part name="AC6" library="rcl" deviceset="C-US" device="C0805"/>
+<part name="AC7" library="rcl" deviceset="C-US" device="C0805"/>
+<part name="SUPPLY51" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY52" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY53" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY54" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16624,6 +16632,22 @@ The GPIO Connector (P1):&lt;br&gt;
 <instance part="JP16" gate="G$1" x="86.36" y="78.74" rot="R90"/>
 <instance part="JP17" gate="G$1" x="81.28" y="124.46" rot="R90"/>
 <instance part="JP18" gate="G$1" x="86.36" y="124.46" rot="R90"/>
+<instance part="AC4" gate="G$1" x="7.62" y="81.28"/>
+<instance part="AC5" gate="G$1" x="7.62" y="35.56"/>
+<instance part="AC6" gate="G$1" x="7.62" y="-10.16"/>
+<instance part="AC7" gate="G$1" x="7.62" y="-55.88"/>
+<instance part="SUPPLY51" gate="GND" x="7.62" y="73.66" smashed="yes">
+<attribute name="VALUE" x="5.715" y="74.295" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY52" gate="GND" x="7.62" y="27.94" smashed="yes">
+<attribute name="VALUE" x="5.715" y="28.575" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY53" gate="GND" x="7.62" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="5.715" y="-17.145" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY54" gate="GND" x="7.62" y="-63.5" smashed="yes">
+<attribute name="VALUE" x="5.715" y="-62.865" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17053,6 +17077,22 @@ The GPIO Connector (P1):&lt;br&gt;
 <wire x1="251.46" y1="124.46" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="127" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="AC4" gate="G$1" pin="2"/>
+<pinref part="SUPPLY51" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="AC5" gate="G$1" pin="2"/>
+<pinref part="SUPPLY52" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="AC6" gate="G$1" pin="2"/>
+<pinref part="SUPPLY53" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="AC7" gate="G$1" pin="2"/>
+<pinref part="SUPPLY54" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="XSAMPLE" class="0">
@@ -17693,6 +17733,11 @@ The GPIO Connector (P1):&lt;br&gt;
 <wire x1="15.24" y1="88.9" x2="7.62" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="XSET" gate="A" pin="6"/>
 <wire x1="15.24" y1="86.36" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
+<junction x="7.62" y="91.44"/>
+<junction x="7.62" y="88.9"/>
+<pinref part="AC4" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="83.82" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
+<junction x="7.62" y="86.36"/>
 </segment>
 <segment>
 <wire x1="7.62" y1="-50.8" x2="7.62" y2="-48.26" width="0.1524" layer="91"/>
@@ -17714,6 +17759,11 @@ The GPIO Connector (P1):&lt;br&gt;
 <wire x1="15.24" y1="-48.26" x2="7.62" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="ASET" gate="A" pin="6"/>
 <wire x1="15.24" y1="-50.8" x2="7.62" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="7.62" y="-45.72"/>
+<junction x="7.62" y="-48.26"/>
+<pinref part="AC7" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="-53.34" x2="7.62" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="7.62" y="-50.8"/>
 </segment>
 <segment>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="-2.54" width="0.1524" layer="91"/>
@@ -17734,6 +17784,11 @@ The GPIO Connector (P1):&lt;br&gt;
 <wire x1="15.24" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="ZSET" gate="A" pin="6"/>
 <wire x1="15.24" y1="-5.08" x2="7.62" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="7.62" y="0"/>
+<junction x="7.62" y="-2.54"/>
+<pinref part="AC6" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="7.62" y="-5.08"/>
 </segment>
 <segment>
 <wire x1="7.62" y1="40.64" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
@@ -17754,6 +17809,11 @@ The GPIO Connector (P1):&lt;br&gt;
 <wire x1="15.24" y1="43.18" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="YSET" gate="A" pin="6"/>
 <wire x1="15.24" y1="40.64" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
+<junction x="7.62" y="45.72"/>
+<junction x="7.62" y="43.18"/>
+<pinref part="AC5" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="38.1" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
+<junction x="7.62" y="40.64"/>
 </segment>
 <segment>
 <pinref part="ADIR_UP" gate="G$1" pin="2"/>

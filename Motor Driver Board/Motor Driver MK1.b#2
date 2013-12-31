@@ -6,21 +6,21 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -32,9 +32,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -43,7 +43,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -60,6 +60,14 @@
 <wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
 <wire x1="100" y1="80" x2="0" y2="78.73" width="0" layer="20"/>
 <wire x1="0" y1="78.73" x2="0" y2="-1.27" width="0" layer="20"/>
+<rectangle x1="17.78" y1="26.9875" x2="22.225" y2="28.8925" layer="1"/>
+<rectangle x1="10.795" y1="26.9875" x2="15.24" y2="28.8925" layer="1"/>
+<rectangle x1="31.115" y1="26.9875" x2="35.56" y2="28.8925" layer="1"/>
+<rectangle x1="38.1" y1="26.9875" x2="42.545" y2="28.8925" layer="1"/>
+<rectangle x1="51.435" y1="26.9875" x2="55.88" y2="28.8925" layer="1"/>
+<rectangle x1="58.42" y1="26.9875" x2="62.865" y2="28.8925" layer="1"/>
+<rectangle x1="71.755" y1="26.9875" x2="76.2" y2="28.8925" layer="1"/>
+<rectangle x1="78.74" y1="26.9875" x2="83.185" y2="28.8925" layer="1"/>
 </plain>
 <libraries>
 <library name="CNC-Interface">
@@ -2920,209 +2928,317 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="XDRIVER" library="CNC-Interface" package="DIP16" value="DRV8825" x="11.43" y="27.94" rot="R270"/>
-<element name="XOUT" library="con-hirschmann" package="MAB8SH" value="MAB8SH" x="11.43" y="7.62">
+<element name="XDRIVER" library="CNC-Interface" package="DIP16" value="DRV8825" x="11.43" y="27.94" smashed="yes" rot="R270"/>
+<element name="XOUT" library="con-hirschmann" package="MAB8SH" value="MAB8SH" x="11.43" y="7.62" smashed="yes">
 <attribute name="OC_NEWARK" value="67C7888" x="114.3" y="-64.77" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MAB 8 SH" x="114.3" y="-64.77" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="FARNELL" x="114.3" y="-64.77" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="809913" x="114.3" y="-64.77" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.62" y="5.588" size="1.778" layer="25" ratio="10"/>
 </element>
-<element name="YOUT" library="con-hirschmann" package="MAB8SH" value="MAB8SH" x="31.75" y="7.62">
+<element name="YOUT" library="con-hirschmann" package="MAB8SH" value="MAB8SH" x="31.75" y="7.62" smashed="yes">
 <attribute name="OC_NEWARK" value="67C7888" x="156.21" y="-64.77" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MAB 8 SH" x="156.21" y="-64.77" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="FARNELL" x="156.21" y="-64.77" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="809913" x="156.21" y="-64.77" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="27.94" y="5.588" size="1.778" layer="25" ratio="10" rot="SR0"/>
 </element>
-<element name="ZOUT" library="con-hirschmann" package="MAB8SH" value="MAB8SH" x="52.07" y="7.62">
+<element name="ZOUT" library="con-hirschmann" package="MAB8SH" value="MAB8SH" x="52.07" y="7.62" smashed="yes">
 <attribute name="OC_NEWARK" value="67C7888" x="76.2" y="-88.9" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MAB 8 SH" x="76.2" y="-88.9" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="FARNELL" x="76.2" y="-88.9" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="809913" x="76.2" y="-88.9" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="48.5775" y="5.588" size="1.778" layer="25" ratio="10"/>
 </element>
-<element name="AOUT" library="con-hirschmann" package="MAB8SH" value="MAB8SH" x="72.39" y="7.62">
+<element name="AOUT" library="con-hirschmann" package="MAB8SH" value="MAB8SH" x="72.39" y="7.62" smashed="yes">
 <attribute name="OC_NEWARK" value="67C7888" x="153.67" y="-64.77" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MAB 8 SH" x="153.67" y="-64.77" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="FARNELL" x="153.67" y="-64.77" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="809913" x="153.67" y="-64.77" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="68.58" y="5.588" size="1.778" layer="25" ratio="10"/>
 </element>
-<element name="YDRIVER" library="CNC-Interface" package="DIP16" value="DRV8825" x="31.75" y="27.94" rot="R270"/>
-<element name="ZDRIVER" library="CNC-Interface" package="DIP16" value="DRV8825" x="52.07" y="27.94" rot="R270"/>
-<element name="ADRIVER" library="CNC-Interface" package="DIP16" value="DRV8825" x="72.39" y="27.94" rot="R270"/>
-<element name="XSET" library="pinhead" package="2X03" value="" x="15.24" y="39.37"/>
-<element name="YSET" library="pinhead" package="2X03" value="" x="35.56" y="39.37"/>
-<element name="ZSET" library="pinhead" package="2X03" value="" x="55.88" y="39.37"/>
-<element name="ASET" library="pinhead" package="2X03" value="" x="76.2" y="39.37"/>
-<element name="DB" library="con-thomas-betts" package="H2R25ST" value="PARALLEL PORT" x="46.99" y="62.23" rot="R180">
+<element name="YDRIVER" library="CNC-Interface" package="DIP16" value="DRV8825" x="31.75" y="27.94" smashed="yes" rot="R270"/>
+<element name="ZDRIVER" library="CNC-Interface" package="DIP16" value="DRV8825" x="52.07" y="27.94" smashed="yes" rot="R270"/>
+<element name="ADRIVER" library="CNC-Interface" package="DIP16" value="DRV8825" x="72.39" y="27.94" smashed="yes" rot="R270"/>
+<element name="XSET" library="pinhead" package="2X03" value="" x="15.24" y="39.37" smashed="yes">
+<attribute name="NAME" x="11.1125" y="36.83" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="11.43" y="34.925" size="1.27" layer="27"/>
+</element>
+<element name="YSET" library="pinhead" package="2X03" value="" x="35.56" y="39.37" smashed="yes">
+<attribute name="NAME" x="31.4325" y="36.83" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="31.75" y="34.925" size="1.27" layer="27"/>
+</element>
+<element name="ZSET" library="pinhead" package="2X03" value="" x="55.88" y="39.37" smashed="yes">
+<attribute name="NAME" x="51.7525" y="36.83" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="52.07" y="34.925" size="1.27" layer="27"/>
+</element>
+<element name="ASET" library="pinhead" package="2X03" value="" x="76.2" y="39.37" smashed="yes">
+<attribute name="NAME" x="72.0725" y="36.83" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="72.39" y="34.925" size="1.27" layer="27"/>
+</element>
+<element name="DB" library="con-thomas-betts" package="H2R25ST" value="PARALLEL PORT" x="46.99" y="62.23" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="16F4224" x="-33.02" y="176.53" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="H2R25ST29J" x="-33.02" y="176.53" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="TYCO ELECTRONICS" x="-33.02" y="176.53" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-33.02" y="176.53" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="54.2925" y="68.8975" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="XDIR" library="optocoupler" package="DIL04" value="PC817" x="3.81" y="48.895" rot="R180">
+<element name="XDIR" library="optocoupler" package="DIL04" value="PC817" x="3.81" y="48.895" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="97K7059" x="-87.63" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="-87.63" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="-87.63" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="-87.63" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="3.2385" y="50.927" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="XSTP" library="optocoupler" package="DIL04" value="PC817" x="8.89" y="48.895" rot="R180">
+<element name="XSTP" library="optocoupler" package="DIL04" value="PC817" x="8.89" y="48.895" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="97K7059" x="-102.87" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="-102.87" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="-102.87" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="-102.87" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="8.3185" y="51.2445" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="YDIR" library="optocoupler" package="DIL04" value="PC817" x="24.13" y="48.895" rot="R180">
+<element name="YDIR" library="optocoupler" package="DIL04" value="PC817" x="24.13" y="48.895" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="97K7059" x="-97.79" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="-97.79" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="-97.79" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="-97.79" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="23.5585" y="50.927" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="YSTP" library="optocoupler" package="DIL04" value="PC817" x="29.21" y="48.895" rot="R180">
+<element name="YSTP" library="optocoupler" package="DIL04" value="PC817" x="29.21" y="48.895" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="97K7059" x="11.43" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="11.43" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="11.43" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="11.43" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="28.6385" y="51.2445" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="ZSTP" library="optocoupler" package="DIL04" value="PC817" x="49.53" y="48.895" rot="R180">
+<element name="ZSTP" library="optocoupler" package="DIL04" value="PC817" x="49.53" y="48.895" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="97K7059" x="1.27" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="1.27" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="1.27" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="1.27" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="48.9585" y="51.2445" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="ADIR" library="optocoupler" package="DIL04" value="PC817" x="64.77" y="48.895" rot="R180">
+<element name="ADIR" library="optocoupler" package="DIL04" value="PC817" x="64.77" y="48.895" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="97K7059" x="24.13" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="24.13" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="24.13" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="24.13" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="64.1985" y="50.927" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="ASTP" library="optocoupler" package="DIL04" value="PC817" x="69.85" y="48.895" rot="R180">
+<element name="ASTP" library="optocoupler" package="DIL04" value="PC817" x="69.85" y="48.895" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="97K7059" x="8.89" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="8.89" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="8.89" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="8.89" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="69.2785" y="51.2445" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="EN" library="optocoupler" package="DIL04" value="PC817" x="11.43" y="65.405" rot="R90">
+<element name="EN" library="optocoupler" package="DIL04" value="PC817" x="11.43" y="65.405" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="97K7059" x="107.95" y="136.525" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="107.95" y="136.525" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="107.95" y="136.525" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="107.95" y="136.525" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="12.5095" y="65.9765" size="1.27" layer="25" ratio="10" rot="R180"/>
 </element>
-<element name="FAULT" library="optocoupler" package="DIL04" value="PC817" x="11.43" y="60.325" rot="R90">
+<element name="FAULT" library="optocoupler" package="DIL04" value="PC817" x="11.43" y="60.325" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="97K7059" x="107.95" y="141.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="107.95" y="141.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="107.95" y="141.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="107.95" y="141.605" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="14.4145" y="60.8965" size="1.27" layer="25" ratio="10" rot="R180"/>
 </element>
-<element name="XHOME" library="optocoupler" package="DIL04" value="PC817" x="13.97" y="48.895" rot="R180">
+<element name="XHOM" library="optocoupler" package="DIL04" value="PC817" x="13.97" y="48.895" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="97K7059" x="-87.63" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="-87.63" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="-87.63" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="-87.63" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="13.3985" y="51.562" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="YHOME" library="optocoupler" package="DIL04" value="PC817" x="34.29" y="48.895" rot="R180">
+<element name="YHOM" library="optocoupler" package="DIL04" value="PC817" x="34.29" y="48.895" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="97K7059" x="-97.79" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="-97.79" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="-97.79" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="-97.79" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="33.7185" y="51.562" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="ZHOME" library="optocoupler" package="DIL04" value="PC817" x="54.61" y="48.895" rot="R180">
+<element name="ZHOM" library="optocoupler" package="DIL04" value="PC817" x="54.61" y="48.895" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="97K7059" x="16.51" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="16.51" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="16.51" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="16.51" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="54.0385" y="51.562" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="AHOME" library="optocoupler" package="DIL04" value="PC817" x="74.93" y="48.895" rot="R180">
+<element name="AHOM" library="optocoupler" package="DIL04" value="PC817" x="74.93" y="48.895" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="97K7059" x="24.13" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="24.13" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="24.13" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="24.13" y="145.415" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="74.3585" y="51.562" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="XDIR_UP" library="resistor" package="R0805" value="1k" x="2.54" y="39.37" rot="MR90"/>
-<element name="XSTP_UP" library="resistor" package="R0805" value="" x="10.16" y="39.37" rot="MR90"/>
-<element name="YDIR_UP" library="resistor" package="R0805" value="1k" x="22.86" y="39.37" rot="MR90"/>
-<element name="YSTP_UP" library="resistor" package="R0805" value="" x="30.48" y="39.37" rot="MR90"/>
-<element name="ZDIR_UP" library="resistor" package="R0805" value="1k" x="43.18" y="39.37" rot="MR90"/>
-<element name="ZSTP_UP" library="resistor" package="R0805" value="" x="50.8" y="39.37" rot="MR90"/>
-<element name="ADIR_UP" library="resistor" package="R0805" value="1k" x="63.5" y="39.37" rot="MR90"/>
-<element name="ASTP_UP" library="resistor" package="R0805" value="" x="71.12" y="39.37" rot="MR90"/>
-<element name="XHOME_UP" library="resistor" package="R0805" value="1k" x="19.05" y="43.18" rot="MR180"/>
-<element name="YHOME_UP" library="resistor" package="R0805" value="1k" x="39.37" y="43.18" rot="MR180"/>
-<element name="ZHOME_UP" library="resistor" package="R0805" value="1k" x="59.69" y="43.18" rot="MR0"/>
-<element name="AHOME_UP" library="resistor" package="R0805" value="1k" x="80.01" y="43.18" rot="MR0"/>
-<element name="EN_UP" library="resistor" package="R0805" value="1k" x="3.81" y="65.405" rot="MR90"/>
-<element name="XDIR_IN" library="resistor" package="R0805" value="330" x="5.08" y="49.53" rot="MR270"/>
-<element name="XSTP_IN" library="resistor" package="R0805" value="330" x="10.16" y="49.53" rot="MR270"/>
-<element name="YDIR_IN" library="resistor" package="R0805" value="330" x="25.4" y="49.53" rot="MR270"/>
-<element name="YSTP_IN" library="resistor" package="R0805" value="330" x="30.48" y="49.53" rot="MR270"/>
-<element name="ZDIR_IN" library="resistor" package="R0805" value="330" x="45.72" y="49.53" rot="MR270"/>
-<element name="ZSTP_IN" library="resistor" package="R0805" value="330" x="50.8" y="49.53" rot="MR270"/>
-<element name="ADIR_IN" library="resistor" package="R0805" value="330" x="66.04" y="49.53" rot="MR270"/>
-<element name="ASTP_IN" library="resistor" package="R0805" value="330" x="71.12" y="49.53" rot="MR270"/>
-<element name="AHOME_IN" library="resistor" package="R0805" value="330" x="76.2" y="49.53" rot="MR270"/>
-<element name="ZHOME_IN" library="resistor" package="R0805" value="330" x="55.88" y="49.53" rot="MR270"/>
-<element name="YHOME_IN" library="resistor" package="R0805" value="330" x="35.56" y="49.53" rot="MR270"/>
-<element name="XHOME_IN" library="resistor" package="R0805" value="330" x="15.24" y="49.53" rot="MR270"/>
-<element name="EN_IN" library="resistor" package="R0805" value="" x="12.065" y="64.135" rot="MR180"/>
-<element name="ZDIR" library="optocoupler" package="DIL04" value="PC817" x="44.45" y="48.895" rot="R180">
+<element name="XDIR_UP" library="resistor" package="R0805" value="1k" x="2.54" y="39.37" smashed="yes" rot="MR90"/>
+<element name="XSTP_UP" library="resistor" package="R0805" value="" x="10.16" y="39.37" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="7.874" y="38.608" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="YDIR_UP" library="resistor" package="R0805" value="1k" x="22.86" y="39.37" smashed="yes" rot="MR90"/>
+<element name="YSTP_UP" library="resistor" package="R0805" value="" x="30.48" y="39.37" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="28.194" y="38.608" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="ZDIR_UP" library="resistor" package="R0805" value="1k" x="43.18" y="39.37" smashed="yes" rot="MR90"/>
+<element name="ZSTP_UP" library="resistor" package="R0805" value="" x="50.8" y="39.37" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="48.514" y="38.608" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="ADIR_UP" library="resistor" package="R0805" value="1k" x="63.5" y="39.37" smashed="yes" rot="MR90"/>
+<element name="ASTP_UP" library="resistor" package="R0805" value="" x="71.12" y="39.37" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="68.834" y="38.608" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="XHOME_UP" library="resistor" package="R0805" value="1k" x="19.05" y="43.18" smashed="yes" rot="MR180"/>
+<element name="YHOME_UP" library="resistor" package="R0805" value="1k" x="39.37" y="43.18" smashed="yes" rot="MR180"/>
+<element name="ZHOME_UP" library="resistor" package="R0805" value="1k" x="59.69" y="43.18" smashed="yes" rot="MR0"/>
+<element name="AHOME_UP" library="resistor" package="R0805" value="1k" x="80.01" y="43.18" smashed="yes" rot="MR0"/>
+<element name="EN_UP" library="resistor" package="R0805" value="1k" x="3.81" y="65.405" smashed="yes" rot="MR90"/>
+<element name="XDIR_IN" library="resistor" package="R0805" value="330" x="5.08" y="49.53" smashed="yes" rot="MR270"/>
+<element name="XSTP_IN" library="resistor" package="R0805" value="330" x="10.16" y="49.53" smashed="yes" rot="MR270"/>
+<element name="YDIR_IN" library="resistor" package="R0805" value="330" x="25.4" y="49.53" smashed="yes" rot="MR270"/>
+<element name="YSTP_IN" library="resistor" package="R0805" value="330" x="30.48" y="49.53" smashed="yes" rot="MR270"/>
+<element name="ZDIR_IN" library="resistor" package="R0805" value="330" x="45.72" y="49.53" smashed="yes" rot="MR270"/>
+<element name="ZSTP_IN" library="resistor" package="R0805" value="330" x="50.8" y="49.53" smashed="yes" rot="MR270"/>
+<element name="ADIR_IN" library="resistor" package="R0805" value="330" x="66.04" y="49.53" smashed="yes" rot="MR270"/>
+<element name="ASTP_IN" library="resistor" package="R0805" value="330" x="71.12" y="49.53" smashed="yes" rot="MR270"/>
+<element name="AHOME_IN" library="resistor" package="R0805" value="330" x="76.2" y="49.53" smashed="yes" rot="MR270"/>
+<element name="ZHOME_IN" library="resistor" package="R0805" value="330" x="55.88" y="49.53" smashed="yes" rot="MR270"/>
+<element name="YHOME_IN" library="resistor" package="R0805" value="330" x="35.56" y="49.53" smashed="yes" rot="MR270"/>
+<element name="XHOME_IN" library="resistor" package="R0805" value="330" x="15.24" y="49.53" smashed="yes" rot="MR270"/>
+<element name="EN_IN" library="resistor" package="R0805" value="" x="12.065" y="64.135" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="11.303" y="66.421" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="ZDIR" library="optocoupler" package="DIL04" value="PC817" x="44.45" y="48.895" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="97K7059" x="16.51" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PC817X4J000F" x="16.51" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="16.51" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9707727" x="16.51" y="164.465" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="43.8785" y="50.927" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="FAULT_UP" library="resistor" package="R0805" value="1k" x="3.81" y="60.325" rot="MR90"/>
-<element name="FAULT_OUT" library="resistor" package="R0805" value="100" x="19.05" y="60.325" rot="MR90"/>
-<element name="FAULT_IN" library="resistor" package="R0805" value="330" x="12.065" y="59.055" rot="MR180"/>
-<element name="XHOME_OUT" library="resistor" package="R0805" value="100" x="20.32" y="49.53" rot="MR90"/>
-<element name="YHOME_OUT" library="resistor" package="R0805" value="100" x="40.64" y="49.53" rot="MR90"/>
-<element name="ZHOME_OUT" library="resistor" package="R0805" value="100" x="60.96" y="49.53" rot="MR90"/>
-<element name="AHOME_OUT" library="resistor" package="R0805" value="100" x="81.28" y="49.53" rot="MR90"/>
-<element name="X1" library="con-wago-500" package="W237-102" value="" x="2.54" y="27.94" rot="R90">
-<attribute name="OC_NEWARK" value="70K9898" x="130.81" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="237-102" x="130.81" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="130.81" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="130.81" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="FAULT_UP" library="resistor" package="R0805" value="1k" x="3.81" y="60.325" smashed="yes" rot="MR90"/>
+<element name="FAULT_OUT" library="resistor" package="R0805" value="100" x="19.05" y="60.325" smashed="yes" rot="MR90"/>
+<element name="FAULT_IN" library="resistor" package="R0805" value="330" x="12.065" y="59.055" smashed="yes" rot="MR180"/>
+<element name="XHOME_OUT" library="resistor" package="R0805" value="100" x="20.32" y="49.53" smashed="yes" rot="MR90"/>
+<element name="YHOME_OUT" library="resistor" package="R0805" value="100" x="40.64" y="49.53" smashed="yes" rot="MR90"/>
+<element name="ZHOME_OUT" library="resistor" package="R0805" value="100" x="60.96" y="49.53" smashed="yes" rot="MR90"/>
+<element name="AHOME_OUT" library="resistor" package="R0805" value="100" x="81.28" y="49.53" smashed="yes" rot="MR90"/>
+<element name="X1" library="con-wago-500" package="W237-102" value="" x="5.08" y="27.94" smashed="yes" rot="MR90">
+<attribute name="OC_NEWARK" value="70K9898" x="-123.19" y="69.85" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="237-102" x="-123.19" y="69.85" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="" x="-123.19" y="69.85" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="-123.19" y="69.85" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="-2.54" y="22.9" size="1.27" layer="28" ratio="10" rot="MR90"/>
 </element>
-<element name="XC1" library="rcl" package="SANYO-OSCON_SMD_E7" value="" x="16.51" y="27.94"/>
-<element name="YC1" library="rcl" package="SANYO-OSCON_SMD_E7" value="" x="36.83" y="27.94"/>
-<element name="ZC1" library="rcl" package="SANYO-OSCON_SMD_E7" value="" x="57.15" y="27.94"/>
-<element name="AC1" library="rcl" package="SANYO-OSCON_SMD_E7" value="" x="77.47" y="27.94"/>
-<element name="XC2" library="rcl" package="C0805" value="" x="19.05" y="23.495" rot="MR0"/>
-<element name="YC2" library="rcl" package="C0805" value="" x="39.37" y="23.495" rot="MR0"/>
-<element name="ZC2" library="rcl" package="C0805" value="" x="59.69" y="23.495" rot="MR0"/>
-<element name="AC2" library="rcl" package="C0805" value="" x="80.01" y="23.495" rot="MR0"/>
-<element name="LED1" library="led" package="CHIP-LED0805" value="" x="76.2" y="67.945" rot="MR270"/>
-<element name="RLED" library="resistor" package="R0805" value="330" x="80.01" y="67.945" rot="MR180"/>
+<element name="XC1" library="rcl" package="SANYO-OSCON_SMD_E7" value="" x="16.51" y="27.94" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="12.7" y="33.655" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="YC1" library="rcl" package="SANYO-OSCON_SMD_E7" value="" x="36.83" y="27.94" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="33.02" y="33.655" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="ZC1" library="rcl" package="SANYO-OSCON_SMD_E7" value="" x="57.15" y="27.94" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="53.34" y="33.655" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="AC1" library="rcl" package="SANYO-OSCON_SMD_E7" value="" x="77.47" y="27.94" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="73.66" y="33.655" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="XC2" library="rcl" package="C0805" value="" x="19.05" y="23.495" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="20.32" y="20.955" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="YC2" library="rcl" package="C0805" value="" x="39.37" y="23.495" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="40.64" y="20.955" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="ZC2" library="rcl" package="C0805" value="" x="59.69" y="23.495" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="60.96" y="20.955" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="AC2" library="rcl" package="C0805" value="" x="80.01" y="23.495" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="81.28" y="20.955" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="LED1" library="led" package="CHIP-LED0805" value="" x="76.2" y="67.945" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="77.47" y="65.405" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="RLED" library="resistor" package="R0805" value="330" x="80.01" y="67.945" smashed="yes" rot="MR180"/>
 <element name="U$1" library="RaspberryPi" package="RASPBERRY-PI" value="RASPBERRY-PI" x="-104.14" y="52.07"/>
-<element name="IC1" library="burr-brown" package="SOT223" value="REG1117" x="78.74" y="59.69" rot="MR180">
+<element name="IC1" library="burr-brown" package="SOT223" value="REG1117" x="78.74" y="59.69" smashed="yes" rot="MR180">
 <attribute name="OC_NEWARK" value="14P6981" x="191.77" y="175.26" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="REG1117" x="191.77" y="175.26" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="" x="191.77" y="175.26" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="OC_FARNELL" value="1097566" x="191.77" y="175.26" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="AC3" library="rcl" package="C0805" value="" x="74.295" y="59.69" rot="MR90"/>
-<element name="RLED1" library="resistor" package="R0805" value="330" x="80.01" y="65.405" rot="MR0"/>
-<element name="LED2" library="led" package="CHIP-LED0805" value="" x="76.2" y="65.405" rot="MR270"/>
-<element name="JP1" library="pinhead" package="1X01" value="" x="5.08" y="56.515" rot="R90"/>
-<element name="JP2" library="pinhead" package="1X01" value="" x="7.62" y="56.515" rot="R90"/>
-<element name="JP3" library="pinhead" package="1X01" value="" x="5.08" y="38.1" rot="R90"/>
-<element name="JP4" library="pinhead" package="1X01" value="" x="7.62" y="38.1" rot="R90"/>
-<element name="JP5" library="pinhead" package="1X01" value="" x="25.4" y="38.1" rot="R90"/>
-<element name="JP6" library="pinhead" package="1X01" value="" x="27.94" y="38.1" rot="R90"/>
-<element name="JP7" library="pinhead" package="1X01" value="" x="45.72" y="38.1" rot="R90"/>
-<element name="JP8" library="pinhead" package="1X01" value="" x="48.26" y="38.1" rot="R90"/>
-<element name="JP9" library="pinhead" package="1X01" value="" x="66.04" y="38.1" rot="R90"/>
-<element name="JP10" library="pinhead" package="1X01" value="" x="68.58" y="38.1" rot="R90"/>
-<element name="JP11" library="pinhead" package="1X01" value="" x="64.77" y="17.78" rot="R90"/>
-<element name="JP12" library="pinhead" package="1X01" value="" x="67.31" y="17.78" rot="R90"/>
-<element name="JP13" library="pinhead" package="1X01" value="" x="44.45" y="17.78" rot="R90"/>
-<element name="JP14" library="pinhead" package="1X01" value="" x="46.99" y="17.78" rot="R90"/>
-<element name="JP15" library="pinhead" package="1X01" value="" x="24.13" y="17.78" rot="R90"/>
-<element name="JP16" library="pinhead" package="1X01" value="" x="26.67" y="17.78" rot="R90"/>
-<element name="JP17" library="pinhead" package="1X01" value="" x="3.81" y="17.78" rot="R90"/>
-<element name="JP18" library="pinhead" package="1X01" value="" x="6.35" y="17.78" rot="R90"/>
-<element name="AC4" library="rcl" package="C0805" value="" x="20.32" y="39.37" rot="MR270"/>
-<element name="AC5" library="rcl" package="C0805" value="" x="40.64" y="39.37" rot="MR270"/>
-<element name="AC6" library="rcl" package="C0805" value="" x="60.96" y="39.37" rot="MR270"/>
-<element name="AC7" library="rcl" package="C0805" value="" x="81.28" y="39.37" rot="MR270"/>
+<element name="AC3" library="rcl" package="C0805" value="" x="74.295" y="59.69" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="71.755" y="58.42" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="RLED1" library="resistor" package="R0805" value="330" x="80.01" y="65.405" smashed="yes" rot="MR0"/>
+<element name="LED2" library="led" package="CHIP-LED0805" value="" x="76.2" y="65.405" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="77.47" y="62.865" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="JP1" library="pinhead" package="1X01" value="" x="5.08" y="56.515" smashed="yes" rot="R90">
+<attribute name="VALUE" x="8.255" y="55.245" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP2" library="pinhead" package="1X01" value="" x="7.62" y="56.515" smashed="yes" rot="R90">
+<attribute name="VALUE" x="10.795" y="55.245" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP3" library="pinhead" package="1X01" value="" x="5.08" y="38.1" smashed="yes" rot="R90">
+<attribute name="VALUE" x="8.255" y="36.83" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP4" library="pinhead" package="1X01" value="" x="7.62" y="38.1" smashed="yes" rot="R90">
+<attribute name="VALUE" x="10.795" y="36.83" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP5" library="pinhead" package="1X01" value="" x="25.4" y="38.1" smashed="yes" rot="R90">
+<attribute name="VALUE" x="28.575" y="36.83" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP6" library="pinhead" package="1X01" value="" x="27.94" y="38.1" smashed="yes" rot="R90">
+<attribute name="VALUE" x="31.115" y="36.83" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP7" library="pinhead" package="1X01" value="" x="45.72" y="38.1" smashed="yes" rot="R90">
+<attribute name="VALUE" x="48.895" y="36.83" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP8" library="pinhead" package="1X01" value="" x="48.26" y="38.1" smashed="yes" rot="R90">
+<attribute name="VALUE" x="51.435" y="36.83" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP9" library="pinhead" package="1X01" value="" x="66.04" y="38.1" smashed="yes" rot="R90">
+<attribute name="VALUE" x="69.215" y="36.83" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP10" library="pinhead" package="1X01" value="" x="68.58" y="38.1" smashed="yes" rot="R90">
+<attribute name="VALUE" x="71.755" y="36.83" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP11" library="pinhead" package="1X01" value="" x="64.77" y="17.78" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.945" y="16.51" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP12" library="pinhead" package="1X01" value="" x="67.31" y="17.78" smashed="yes" rot="R90">
+<attribute name="VALUE" x="70.485" y="16.51" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP13" library="pinhead" package="1X01" value="" x="44.45" y="17.78" smashed="yes" rot="R90">
+<attribute name="VALUE" x="47.625" y="16.51" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP14" library="pinhead" package="1X01" value="" x="46.99" y="17.78" smashed="yes" rot="R90">
+<attribute name="VALUE" x="50.165" y="16.51" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP15" library="pinhead" package="1X01" value="" x="24.13" y="17.78" smashed="yes" rot="R90">
+<attribute name="VALUE" x="27.305" y="16.51" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP16" library="pinhead" package="1X01" value="" x="26.67" y="17.78" smashed="yes" rot="R90">
+<attribute name="VALUE" x="29.845" y="16.51" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP17" library="pinhead" package="1X01" value="" x="3.81" y="17.78" smashed="yes" rot="R90">
+<attribute name="VALUE" x="6.985" y="16.51" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP18" library="pinhead" package="1X01" value="" x="6.35" y="17.78" smashed="yes" rot="R90">
+<attribute name="VALUE" x="9.525" y="16.51" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="AC4" library="rcl" package="C0805" value="" x="20.32" y="39.37" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="22.86" y="40.64" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="AC5" library="rcl" package="C0805" value="" x="40.64" y="39.37" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="43.18" y="40.64" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="AC6" library="rcl" package="C0805" value="" x="60.96" y="39.37" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="63.5" y="40.64" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="AC7" library="rcl" package="C0805" value="" x="81.28" y="39.37" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="83.82" y="40.64" size="1.27" layer="28" rot="MR270"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -3356,15 +3472,15 @@ design rules under a new name.</description>
 <wire x1="81.915" y1="66.675" x2="81.28" y2="67.31" width="0.3048" layer="16"/>
 <wire x1="81.28" y1="67.31" x2="80.86" y2="67.945" width="0" layer="19" extent="16-16"/>
 <wire x1="81.0514" y1="62.8396" x2="81.28" y2="62.865" width="0" layer="19" extent="16-16"/>
-<wire x1="80.97" y1="27.94" x2="81.28" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="40.33" y1="27.94" x2="40.005" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="20.01" y1="27.94" x2="20.32" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="80.97" y1="27.94" x2="81.28" y2="27.94" width="0" layer="19" extent="1-16"/>
+<wire x1="40.33" y1="27.94" x2="40.005" y2="27.94" width="0" layer="19" extent="1-16"/>
+<wire x1="20.01" y1="27.94" x2="20.32" y2="27.94" width="0" layer="19" extent="1-16"/>
 <wire x1="3.81" y1="25.44" x2="3.175" y2="25.4" width="0" layer="19" extent="16-16"/>
 <wire x1="80.96" y1="23.495" x2="80.645" y2="22.86" width="0" layer="19" extent="16-16"/>
 <wire x1="60.64" y1="23.495" x2="60.325" y2="22.86" width="0" layer="19" extent="16-16"/>
 <wire x1="40.32" y1="23.495" x2="40.005" y2="22.86" width="0" layer="19" extent="16-16"/>
 <wire x1="20" y1="23.495" x2="19.685" y2="22.86" width="0" layer="19" extent="16-16"/>
-<wire x1="60.65" y1="27.94" x2="61.595" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="60.65" y1="27.94" x2="61.595" y2="27.94" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="GND">
 <contactref element="ADRIVER" pad="9"/>
@@ -3397,10 +3513,10 @@ design rules under a new name.</description>
 <contactref element="ZOUT" pad="3"/>
 <contactref element="YOUT" pad="3"/>
 <contactref element="AOUT" pad="3"/>
-<contactref element="XHOME" pad="2"/>
-<contactref element="YHOME" pad="2"/>
-<contactref element="ZHOME" pad="2"/>
-<contactref element="AHOME" pad="2"/>
+<contactref element="XHOM" pad="2"/>
+<contactref element="YHOM" pad="2"/>
+<contactref element="ZHOM" pad="2"/>
+<contactref element="AHOM" pad="2"/>
 <contactref element="X1" pad="2"/>
 <contactref element="XC1" pad="-"/>
 <contactref element="XC2" pad="2"/>
@@ -3530,11 +3646,11 @@ design rules under a new name.</description>
 <wire x1="7.62" y1="45.72" x2="8.255" y2="46.355" width="0.3048" layer="16"/>
 <wire x1="8.255" y1="46.355" x2="10.795" y2="46.355" width="0.3048" layer="16"/>
 <wire x1="10.795" y1="46.355" x2="11.43" y2="45.72" width="0.3048" layer="16"/>
-<wire x1="11.43" y1="45.72" x2="11.43" y2="43.815" width="0.3048" layer="16"/>
-<wire x1="11.43" y1="43.815" x2="12.065" y2="43.18" width="0.3048" layer="16"/>
-<wire x1="12.065" y1="43.18" x2="13.335" y2="43.18" width="0.3048" layer="16"/>
-<wire x1="13.335" y1="43.18" x2="13.97" y2="43.815" width="0.3048" layer="16"/>
-<wire x1="13.97" y1="43.815" x2="13.97" y2="46.99" width="0.3048" layer="16"/>
+<wire x1="11.43" y1="45.72" x2="11.43" y2="43.18" width="0.3048" layer="16"/>
+<wire x1="11.43" y1="43.18" x2="12.065" y2="42.545" width="0.3048" layer="16"/>
+<wire x1="12.065" y1="42.545" x2="13.335" y2="42.545" width="0.3048" layer="16"/>
+<wire x1="13.335" y1="42.545" x2="13.97" y2="43.18" width="0.3048" layer="16"/>
+<wire x1="13.97" y1="43.18" x2="13.97" y2="46.99" width="0.3048" layer="16"/>
 <wire x1="13.97" y1="46.99" x2="12.7" y2="48.26" width="0.3048" layer="16"/>
 <wire x1="12.7" y1="48.26" x2="12.7" y2="52.705" width="0.3048" layer="16"/>
 <wire x1="27.94" y1="45.085" x2="27.94" y2="45.72" width="0.3048" layer="16"/>
@@ -3704,10 +3820,8 @@ design rules under a new name.</description>
 <wire x1="67.945" y1="57.785" x2="68.58" y2="57.15" width="0.3048" layer="16"/>
 <wire x1="68.58" y1="57.15" x2="69.85" y2="57.15" width="0.3048" layer="16"/>
 <wire x1="69.85" y1="57.15" x2="70.485" y2="56.515" width="0.3048" layer="16"/>
-<wire x1="70.485" y1="56.515" x2="71.755" y2="56.515" width="0.3048" layer="16"/>
-<wire x1="71.755" y1="56.515" x2="72.39" y2="55.88" width="0.3048" layer="16"/>
-<wire x1="72.39" y1="55.88" x2="73.025" y2="55.88" width="0.3048" layer="16"/>
-<wire x1="73.025" y1="55.88" x2="73.66" y2="55.245" width="0.3048" layer="16"/>
+<wire x1="70.485" y1="56.515" x2="72.39" y2="56.515" width="0.3048" layer="16"/>
+<wire x1="72.39" y1="56.515" x2="73.66" y2="55.245" width="0.3048" layer="16"/>
 <wire x1="73.66" y1="55.245" x2="73.66" y2="52.705" width="0.3048" layer="16"/>
 <wire x1="15.24" y1="61.595" x2="9.525" y2="61.595" width="0.3048" layer="1"/>
 <wire x1="9.525" y1="61.595" x2="8.89" y2="60.96" width="0.3048" layer="1"/>
@@ -3727,15 +3841,15 @@ design rules under a new name.</description>
 <wire x1="75.15" y1="65.405" x2="75.15" y2="67.945" width="0" layer="19" extent="16-16"/>
 <wire x1="76.2" y1="62.865" x2="75.15" y2="65.405" width="0" layer="19" extent="16-16"/>
 <wire x1="76.4794" y1="62.8396" x2="76.2" y2="62.865" width="0" layer="19" extent="16-16"/>
-<wire x1="74.295" y1="60.64" x2="77.47" y2="59.055" width="0" layer="19" extent="16-16"/>
+<wire x1="74.295" y1="60.64" x2="76.2" y2="60.325" width="0" layer="19" extent="16-16"/>
 <wire x1="59.055" y1="22.86" x2="63.5" y2="21.59" width="0" layer="19" extent="16-16"/>
-<wire x1="73.97" y1="27.94" x2="74.295" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="73.97" y1="27.94" x2="74.295" y2="27.94" width="0" layer="19" extent="1-16"/>
 <wire x1="79.06" y1="23.495" x2="79.375" y2="23.495" width="0" layer="19" extent="16-16"/>
-<wire x1="53.65" y1="27.94" x2="53.34" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="53.65" y1="27.94" x2="53.34" y2="27.94" width="0" layer="19" extent="1-16"/>
 <wire x1="58.74" y1="23.495" x2="59.055" y2="23.495" width="0" layer="19" extent="16-16"/>
-<wire x1="33.33" y1="27.94" x2="33.655" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="33.33" y1="27.94" x2="33.655" y2="27.94" width="0" layer="19" extent="1-16"/>
 <wire x1="38.42" y1="23.495" x2="38.735" y2="23.495" width="0" layer="19" extent="16-16"/>
-<wire x1="13.01" y1="27.94" x2="12.7" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="13.01" y1="27.94" x2="12.7" y2="27.94" width="0" layer="19" extent="1-16"/>
 <wire x1="18.1" y1="23.495" x2="18.415" y2="23.495" width="0" layer="19" extent="16-16"/>
 <wire x1="3.81" y1="30.44" x2="3.175" y2="30.48" width="0" layer="19" extent="16-16"/>
 <wire x1="4.445" y1="33.02" x2="3.81" y2="30.44" width="0" layer="19" extent="16-16"/>
@@ -3963,10 +4077,10 @@ design rules under a new name.</description>
 <contactref element="ASTP" pad="2"/>
 <contactref element="EN" pad="2"/>
 <contactref element="FAULT" pad="3"/>
-<contactref element="XHOME" pad="3"/>
-<contactref element="YHOME" pad="3"/>
-<contactref element="ZHOME" pad="3"/>
-<contactref element="AHOME" pad="3"/>
+<contactref element="XHOM" pad="3"/>
+<contactref element="YHOM" pad="3"/>
+<contactref element="ZHOM" pad="3"/>
+<contactref element="AHOM" pad="3"/>
 <contactref element="DB" pad="18"/>
 <contactref element="DB" pad="25"/>
 <contactref element="DB" pad="24"/>
@@ -3995,16 +4109,16 @@ design rules under a new name.</description>
 <wire x1="31.75" y1="47.3075" x2="32.385" y2="47.3075" width="0.4064" layer="16"/>
 <wire x1="32.385" y1="47.3075" x2="33.02" y2="46.6725" width="0.4064" layer="16"/>
 <wire x1="33.02" y1="46.6725" x2="33.02" y2="45.085" width="0.4064" layer="16"/>
-<wire x1="22.86" y1="52.705" x2="22.86" y2="54.61" width="0.4064" layer="16"/>
-<wire x1="22.86" y1="54.61" x2="22.225" y2="55.245" width="0.4064" layer="16"/>
-<wire x1="22.225" y1="55.245" x2="12.065" y2="55.245" width="0.4064" layer="16"/>
-<wire x1="12.065" y1="55.245" x2="11.43" y2="54.61" width="0.4064" layer="16"/>
-<wire x1="11.43" y1="54.61" x2="11.43" y2="47.9425" width="0.4064" layer="16"/>
-<wire x1="43.18" y1="52.705" x2="43.18" y2="54.61" width="0.4064" layer="16"/>
-<wire x1="43.18" y1="54.61" x2="42.545" y2="55.245" width="0.4064" layer="16"/>
-<wire x1="42.545" y1="55.245" x2="32.385" y2="55.245" width="0.4064" layer="16"/>
-<wire x1="32.385" y1="55.245" x2="31.75" y2="54.61" width="0.4064" layer="16"/>
-<wire x1="31.75" y1="54.61" x2="31.75" y2="47.9425" width="0.4064" layer="16"/>
+<wire x1="22.86" y1="52.705" x2="22.86" y2="54.5592" width="0.4064" layer="16"/>
+<wire x1="22.86" y1="54.5592" x2="22.225" y2="55.1942" width="0.4064" layer="16"/>
+<wire x1="22.225" y1="55.1942" x2="12.065" y2="55.1942" width="0.4064" layer="16"/>
+<wire x1="12.065" y1="55.1942" x2="11.43" y2="54.5592" width="0.4064" layer="16"/>
+<wire x1="11.43" y1="54.5592" x2="11.43" y2="47.9425" width="0.4064" layer="16"/>
+<wire x1="43.18" y1="52.705" x2="43.18" y2="54.5592" width="0.4064" layer="16"/>
+<wire x1="43.18" y1="54.5592" x2="42.545" y2="55.1942" width="0.4064" layer="16"/>
+<wire x1="42.545" y1="55.1942" x2="32.385" y2="55.1942" width="0.4064" layer="16"/>
+<wire x1="32.385" y1="55.1942" x2="31.75" y2="54.5592" width="0.4064" layer="16"/>
+<wire x1="31.75" y1="54.5592" x2="31.75" y2="47.9425" width="0.4064" layer="16"/>
 <wire x1="43.18" y1="52.705" x2="43.18" y2="47.9425" width="0.4064" layer="16"/>
 <wire x1="43.18" y1="47.9425" x2="43.815" y2="47.3075" width="0.4064" layer="16"/>
 <wire x1="43.815" y1="47.3075" x2="47.625" y2="47.3075" width="0.4064" layer="16"/>
@@ -4016,11 +4130,11 @@ design rules under a new name.</description>
 <wire x1="52.705" y1="47.3075" x2="53.34" y2="46.6725" width="0.4064" layer="16"/>
 <wire x1="53.34" y1="45.085" x2="53.34" y2="46.6725" width="0.4064" layer="16"/>
 <wire x1="52.705" y1="47.3075" x2="52.07" y2="47.9425" width="0.4064" layer="16"/>
-<wire x1="52.07" y1="47.9425" x2="52.07" y2="54.61" width="0.4064" layer="16"/>
-<wire x1="52.07" y1="54.61" x2="52.705" y2="55.245" width="0.4064" layer="16"/>
-<wire x1="52.705" y1="55.245" x2="62.865" y2="55.245" width="0.4064" layer="16"/>
-<wire x1="62.865" y1="55.245" x2="63.5" y2="54.61" width="0.4064" layer="16"/>
-<wire x1="63.5" y1="54.61" x2="63.5" y2="52.705" width="0.4064" layer="16"/>
+<wire x1="52.07" y1="47.9425" x2="52.07" y2="54.5592" width="0.4064" layer="16"/>
+<wire x1="52.07" y1="54.5592" x2="52.705" y2="55.1942" width="0.4064" layer="16"/>
+<wire x1="52.705" y1="55.1942" x2="62.865" y2="55.1942" width="0.4064" layer="16"/>
+<wire x1="62.865" y1="55.1942" x2="63.5" y2="54.5592" width="0.4064" layer="16"/>
+<wire x1="63.5" y1="54.5592" x2="63.5" y2="52.705" width="0.4064" layer="16"/>
 <wire x1="63.5" y1="52.705" x2="63.5" y2="47.9425" width="0.4064" layer="16"/>
 <wire x1="63.5" y1="47.9425" x2="64.135" y2="47.3075" width="0.4064" layer="16"/>
 <wire x1="64.135" y1="47.3075" x2="67.945" y2="47.3075" width="0.4064" layer="16"/>
@@ -4032,7 +4146,7 @@ design rules under a new name.</description>
 <wire x1="73.025" y1="47.3075" x2="73.66" y2="46.6725" width="0.4064" layer="16"/>
 <wire x1="73.66" y1="44.7675" x2="73.66" y2="46.6725" width="0.4064" layer="16"/>
 <wire x1="73.025" y1="47.3075" x2="72.39" y2="47.9425" width="0.4064" layer="16"/>
-<wire x1="72.39" y1="47.9425" x2="72.39" y2="54.61" width="0.4064" layer="16"/>
+<wire x1="72.39" y1="47.9425" x2="72.39" y2="54.9275" width="0.4064" layer="16"/>
 <wire x1="12.065" y1="47.3075" x2="11.43" y2="47.9425" width="0.4064" layer="16"/>
 <wire x1="11.43" y1="48.26" x2="11.43" y2="47.3075" width="0.4064" layer="16"/>
 <wire x1="32.385" y1="47.3075" x2="31.75" y2="47.9425" width="0.4064" layer="16"/>
@@ -4044,20 +4158,20 @@ design rules under a new name.</description>
 <wire x1="9.8425" y1="62.23" x2="9.8425" y2="66.04" width="0.4064" layer="16"/>
 <wire x1="9.8425" y1="66.04" x2="10.4775" y2="66.675" width="0.4064" layer="16"/>
 <wire x1="10.4775" y1="66.675" x2="15.24" y2="66.675" width="0.4064" layer="16"/>
-<wire x1="72.39" y1="54.61" x2="71.755" y2="55.245" width="0.4064" layer="16"/>
-<wire x1="71.755" y1="55.245" x2="70.485" y2="55.245" width="0.4064" layer="16"/>
-<wire x1="70.485" y1="55.245" x2="69.85" y2="55.88" width="0.4064" layer="16"/>
-<wire x1="69.85" y1="55.88" x2="68.58" y2="55.88" width="0.4064" layer="16"/>
-<wire x1="68.58" y1="55.88" x2="67.945" y2="56.515" width="0.4064" layer="16"/>
-<wire x1="67.945" y1="56.515" x2="65.405" y2="56.515" width="0.4064" layer="16"/>
-<wire x1="65.405" y1="56.515" x2="64.77" y2="57.15" width="0.4064" layer="16"/>
-<wire x1="64.77" y1="57.15" x2="62.865" y2="57.15" width="0.4064" layer="16"/>
-<wire x1="62.865" y1="57.15" x2="62.23" y2="57.785" width="0.4064" layer="16"/>
-<wire x1="62.23" y1="57.785" x2="62.23" y2="63.5" width="0.4064" layer="16"/>
-<wire x1="42.8625" y1="63.8175" x2="42.8625" y2="55.5625" width="0.4064" layer="16"/>
-<wire x1="42.8625" y1="55.5625" x2="42.545" y2="55.245" width="0.4064" layer="16"/>
-<wire x1="51.1175" y1="63.5" x2="51.1175" y2="55.5625" width="0.4064" layer="16"/>
-<wire x1="51.1175" y1="55.5625" x2="52.07" y2="54.61" width="0.4064" layer="16"/>
+<wire x1="72.39" y1="54.9275" x2="71.755" y2="55.5625" width="0.4064" layer="16"/>
+<wire x1="71.755" y1="55.5625" x2="70.1675" y2="55.5625" width="0.4064" layer="16"/>
+<wire x1="70.1675" y1="55.5625" x2="69.5325" y2="56.1975" width="0.4064" layer="16"/>
+<wire x1="69.5325" y1="56.1975" x2="68.2625" y2="56.1975" width="0.4064" layer="16"/>
+<wire x1="68.2625" y1="56.1975" x2="67.6275" y2="56.8325" width="0.4064" layer="16"/>
+<wire x1="67.6275" y1="56.8325" x2="65.0875" y2="56.8325" width="0.4064" layer="16"/>
+<wire x1="65.0875" y1="56.8325" x2="64.4525" y2="57.4675" width="0.4064" layer="16"/>
+<wire x1="64.4525" y1="57.4675" x2="62.865" y2="57.4675" width="0.4064" layer="16"/>
+<wire x1="62.865" y1="57.4675" x2="62.23" y2="58.1025" width="0.4064" layer="16"/>
+<wire x1="62.23" y1="58.1025" x2="62.23" y2="63.5" width="0.4064" layer="16"/>
+<wire x1="42.8625" y1="63.8175" x2="42.8625" y2="55.5117" width="0.4064" layer="16"/>
+<wire x1="42.8625" y1="55.5117" x2="42.545" y2="55.1942" width="0.4064" layer="16"/>
+<wire x1="51.1175" y1="63.5" x2="51.1175" y2="55.5117" width="0" layer="19" extent="1-16"/>
+<wire x1="51.1175" y1="55.5117" x2="52.07" y2="54.5592" width="0" layer="19" extent="1-16"/>
 <wire x1="42.8625" y1="63.8175" x2="43.4975" y2="64.4525" width="0.4064" layer="16"/>
 <wire x1="43.4975" y1="64.4525" x2="45.085" y2="64.4525" width="0.4064" layer="16"/>
 <wire x1="45.085" y1="64.4525" x2="45.72" y2="63.8175" width="0.4064" layer="16"/>
@@ -4083,6 +4197,18 @@ design rules under a new name.</description>
 <wire x1="73.66" y1="45.085" x2="73.66" y2="44.7675" width="0" layer="19" extent="16-16"/>
 <wire x1="53.9115" y1="63.6524" x2="56.515" y2="63.8175" width="0" layer="19" extent="16-16"/>
 <wire x1="48.3743" y1="63.6524" x2="45.72" y2="63.8175" width="0" layer="19" extent="16-16"/>
+<wire x1="45.72" y1="63.8175" x2="46.355" y2="64.4525" width="0.4064" layer="16"/>
+<wire x1="51.1175" y1="63.8175" x2="51.7525" y2="64.4525" width="0.4064" layer="16"/>
+<wire x1="51.7525" y1="64.4525" x2="53.34" y2="64.4525" width="0.4064" layer="16"/>
+<wire x1="53.34" y1="64.4525" x2="53.975" y2="63.8175" width="0.4064" layer="16"/>
+<wire x1="51.1175" y1="63.8175" x2="50.4825" y2="64.4525" width="0.4064" layer="16"/>
+<wire x1="50.4825" y1="64.4525" x2="48.895" y2="64.4525" width="0.4064" layer="16"/>
+<wire x1="48.895" y1="64.4525" x2="48.26" y2="63.8175" width="0.4064" layer="16"/>
+<wire x1="46.355" y1="64.4525" x2="47.625" y2="64.4525" width="0.4064" layer="16"/>
+<wire x1="47.625" y1="64.4525" x2="48.26" y2="63.8175" width="0.4064" layer="16"/>
+<wire x1="53.975" y1="63.8175" x2="54.61" y2="64.4525" width="0.4064" layer="16"/>
+<wire x1="54.61" y1="64.4525" x2="55.88" y2="64.4525" width="0.4064" layer="16"/>
+<wire x1="55.88" y1="64.4525" x2="56.515" y2="63.8175" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$35">
 <contactref element="EN" pad="1"/>
@@ -4274,25 +4400,25 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$70">
 <contactref element="XHOME_IN" pad="1"/>
-<contactref element="XHOME" pad="1"/>
+<contactref element="XHOM" pad="1"/>
 <wire x1="15.24" y1="52.705" x2="15.24" y2="50.165" width="0.3048" layer="16"/>
 <wire x1="15.24" y1="50.165" x2="15.24" y2="50.38" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$71">
 <contactref element="YHOME_IN" pad="1"/>
-<contactref element="YHOME" pad="1"/>
+<contactref element="YHOM" pad="1"/>
 <wire x1="35.56" y1="52.705" x2="35.56" y2="50.165" width="0.3048" layer="16"/>
 <wire x1="35.56" y1="50.165" x2="35.56" y2="50.38" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$72">
 <contactref element="ZHOME_IN" pad="1"/>
-<contactref element="ZHOME" pad="1"/>
+<contactref element="ZHOM" pad="1"/>
 <wire x1="55.88" y1="52.705" x2="55.88" y2="50.165" width="0.3048" layer="16"/>
 <wire x1="55.88" y1="50.165" x2="55.88" y2="50.38" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$32">
 <contactref element="AHOME_IN" pad="1"/>
-<contactref element="AHOME" pad="1"/>
+<contactref element="AHOM" pad="1"/>
 <wire x1="76.2" y1="52.705" x2="76.2" y2="50.165" width="0.3048" layer="16"/>
 <wire x1="76.2" y1="50.165" x2="76.2" y2="50.38" width="0" layer="19" extent="16-16"/>
 </signal>
@@ -4311,12 +4437,12 @@ design rules under a new name.</description>
 <wire x1="20.32" y1="50.38" x2="20.32" y2="52.705" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="XHOME_UP">
-<contactref element="XHOME" pad="4"/>
+<contactref element="XHOM" pad="4"/>
 <contactref element="XHOME_OUT" pad="1"/>
 <contactref element="XHOME_UP" pad="1"/>
-<wire x1="15.24" y1="45.085" x2="15.24" y2="43.815" width="0.3048" layer="16"/>
-<wire x1="15.24" y1="43.815" x2="16.51" y2="43.18" width="0.3048" layer="16"/>
-<wire x1="16.51" y1="43.18" x2="18.415" y2="43.18" width="0.3048" layer="16"/>
+<wire x1="15.24" y1="45.085" x2="15.24" y2="43.18" width="0.3048" layer="16"/>
+<wire x1="15.24" y1="43.18" x2="15.875" y2="42.545" width="0.3048" layer="16"/>
+<wire x1="15.875" y1="42.545" x2="18.7325" y2="42.545" width="0.3048" layer="16"/>
 <wire x1="20.32" y1="48.895" x2="19.685" y2="48.895" width="0.3048" layer="16"/>
 <wire x1="19.685" y1="48.895" x2="19.05" y2="49.53" width="0.3048" layer="16"/>
 <wire x1="19.05" y1="49.53" x2="19.05" y2="50.8" width="0.3048" layer="16"/>
@@ -4329,10 +4455,10 @@ design rules under a new name.</description>
 <wire x1="15.875" y1="47.625" x2="15.24" y2="46.99" width="0.3048" layer="16"/>
 <wire x1="15.24" y1="46.99" x2="15.24" y2="45.085" width="0.3048" layer="16"/>
 <wire x1="20.32" y1="48.895" x2="20.32" y2="48.68" width="0" layer="19" extent="16-16"/>
-<wire x1="18.2" y1="43.18" x2="18.415" y2="43.18" width="0" layer="19" extent="16-16"/>
+<wire x1="18.2" y1="43.18" x2="18.7325" y2="42.545" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$69">
-<contactref element="YHOME" pad="4"/>
+<contactref element="YHOM" pad="4"/>
 <contactref element="YHOME_OUT" pad="1"/>
 <contactref element="YHOME_UP" pad="1"/>
 <wire x1="35.56" y1="45.085" x2="35.56" y2="43.815" width="0.3048" layer="16"/>
@@ -4354,7 +4480,7 @@ design rules under a new name.</description>
 <wire x1="40.64" y1="50.38" x2="40.64" y2="52.705" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$75">
-<contactref element="ZHOME" pad="4"/>
+<contactref element="ZHOM" pad="4"/>
 <contactref element="ZHOME_OUT" pad="1"/>
 <contactref element="ZHOME_UP" pad="1"/>
 <wire x1="60.54" y1="43.18" x2="60.96" y2="48.68" width="0" layer="19" extent="16-16"/>
@@ -4373,7 +4499,7 @@ design rules under a new name.</description>
 <wire x1="63.6016" y1="60.8076" x2="63.5" y2="60.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$78">
-<contactref element="AHOME" pad="4"/>
+<contactref element="AHOM" pad="4"/>
 <contactref element="AHOME_OUT" pad="1"/>
 <contactref element="AHOME_UP" pad="1"/>
 <wire x1="80.86" y1="43.18" x2="81.28" y2="48.68" width="0" layer="19" extent="16-16"/>
@@ -4951,14 +5077,6 @@ design rules under a new name.</description>
 <contactref element="DB" pad="7"/>
 <wire x1="46.99" y1="60.325" x2="46.99" y2="60.8076" width="0" layer="19" extent="16-16"/>
 <wire x1="50.8" y1="48.68" x2="50.8" y2="48.26" width="0" layer="19" extent="16-16"/>
-</signal>
-<signal name="N$48">
-<wire x1="51.1175" y1="63.8175" x2="51.7525" y2="64.4525" width="0.4064" layer="16"/>
-<wire x1="51.7525" y1="64.4525" x2="53.34" y2="64.4525" width="0.4064" layer="16"/>
-<wire x1="53.34" y1="64.4525" x2="53.975" y2="63.8175" width="0.4064" layer="16"/>
-<wire x1="51.1175" y1="63.8175" x2="50.4825" y2="64.4525" width="0.4064" layer="16"/>
-<wire x1="50.4825" y1="64.4525" x2="48.895" y2="64.4525" width="0.4064" layer="16"/>
-<wire x1="48.895" y1="64.4525" x2="48.26" y2="63.8175" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$33">
 <wire x1="80.645" y1="29.845" x2="81.915" y2="29.845" width="1.27" layer="16"/>
