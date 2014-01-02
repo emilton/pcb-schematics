@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,12 +39,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -15990,10 +15990,10 @@ Source: www.kingbright.com</description>
 <part name="ZSTP_UP" library="resistor" deviceset="R-US_" device="R0805"/>
 <part name="ADIR_UP" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
 <part name="ASTP_UP" library="resistor" deviceset="R-US_" device="R0805"/>
-<part name="XHOME_UP" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
-<part name="YHOME_UP" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
-<part name="ZHOME_UP" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
-<part name="AHOME_UP" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
+<part name="XHOME_UP" library="resistor" deviceset="R-US_" device="R0805" value="100k"/>
+<part name="YHOME_UP" library="resistor" deviceset="R-US_" device="R0805" value="100k"/>
+<part name="ZHOME_UP" library="resistor" deviceset="R-US_" device="R0805" value="100k"/>
+<part name="AHOME_UP" library="resistor" deviceset="R-US_" device="R0805" value="100k"/>
 <part name="EN_UP" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
 <part name="XDIR_IN" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
 <part name="XSTP_IN" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
@@ -16007,7 +16007,7 @@ Source: www.kingbright.com</description>
 <part name="ZHOME_IN" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
 <part name="YHOME_IN" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
 <part name="XHOME_IN" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
-<part name="EN_IN" library="resistor" deviceset="R-US_" device="R0805"/>
+<part name="EN_IN" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
 <part name="ZDIR" library="optocoupler" deviceset="PC817" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
@@ -16038,8 +16038,8 @@ Source: www.kingbright.com</description>
 <part name="P+13" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY32" library="supply2" deviceset="DGND" device=""/>
-<part name="FAULT_UP" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
-<part name="FAULT_OUT" library="resistor" deviceset="R-US_" device="R0805" value="100"/>
+<part name="FAULT_UP" library="resistor" deviceset="R-US_" device="R0805" value="100k"/>
+<part name="FAULT_OUT" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
 <part name="SUPPLY33" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
 <part name="P+14" library="supply1" deviceset="VCC" device=""/>
@@ -16051,10 +16051,10 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
 <part name="FAULT_IN" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
 <part name="P+18" library="supply1" deviceset="VCC" device=""/>
-<part name="XHOME_OUT" library="resistor" deviceset="R-US_" device="R0805" value="100"/>
-<part name="YHOME_OUT" library="resistor" deviceset="R-US_" device="R0805" value="100"/>
-<part name="ZHOME_OUT" library="resistor" deviceset="R-US_" device="R0805" value="100"/>
-<part name="AHOME_OUT" library="resistor" deviceset="R-US_" device="R0805" value="100"/>
+<part name="XHOME_OUT" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
+<part name="YHOME_OUT" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
+<part name="ZHOME_OUT" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
+<part name="AHOME_OUT" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
 <part name="SUPPLY38" library="supply2" deviceset="DGND" device=""/>
 <part name="SUPPLY39" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY40" library="supply2" deviceset="DGND" device=""/>
@@ -16067,14 +16067,14 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY47" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY48" library="supply2" deviceset="GND" device=""/>
 <part name="X1" library="con-wago-500" deviceset="W237-102" device=""/>
-<part name="XC1" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7"/>
-<part name="YC1" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7"/>
-<part name="ZC1" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7"/>
-<part name="AC1" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7"/>
-<part name="XC2" library="rcl" deviceset="C-US" device="C0805"/>
-<part name="YC2" library="rcl" deviceset="C-US" device="C0805"/>
-<part name="ZC2" library="rcl" deviceset="C-US" device="C0805"/>
-<part name="AC2" library="rcl" deviceset="C-US" device="C0805"/>
+<part name="XC1" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7" value="100uF"/>
+<part name="YC1" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7" value="100uF"/>
+<part name="ZC1" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7" value="100uF"/>
+<part name="AC1" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7" value="100uF"/>
+<part name="XC2" library="rcl" deviceset="C-US" device="C0805" value="100nF"/>
+<part name="YC2" library="rcl" deviceset="C-US" device="C0805" value="100nF"/>
+<part name="ZC2" library="rcl" deviceset="C-US" device="C0805" value="100nF"/>
+<part name="AC2" library="rcl" deviceset="C-US" device="C0805" value="100nF"/>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="RLED" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
@@ -16107,10 +16107,10 @@ Source: www.kingbright.com</description>
 <part name="JP16" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="JP17" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="JP18" library="pinhead" deviceset="PINHD-1X1" device=""/>
-<part name="AC4" library="rcl" deviceset="C-US" device="C0805"/>
-<part name="AC5" library="rcl" deviceset="C-US" device="C0805"/>
-<part name="AC6" library="rcl" deviceset="C-US" device="C0805"/>
-<part name="AC7" library="rcl" deviceset="C-US" device="C0805"/>
+<part name="XC3" library="rcl" deviceset="C-US" device="C0805" value="100nF"/>
+<part name="YC3" library="rcl" deviceset="C-US" device="C0805" value="100nF"/>
+<part name="ZC3" library="rcl" deviceset="C-US" device="C0805" value="100nF"/>
+<part name="AC3" library="rcl" deviceset="C-US" device="C0805" value="100nF"/>
 <part name="SUPPLY51" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY52" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY53" library="supply2" deviceset="GND" device=""/>
@@ -16119,6 +16119,14 @@ Source: www.kingbright.com</description>
 <sheets>
 <sheet>
 <plain>
+<text x="-33.02" y="165.1" size="1.778" layer="97">Opted for lower value pullup resistor on input to 
+improve response time. See PC817 datasheet.</text>
+<text x="167.64" y="147.32" size="1.778" layer="97">* Needs testing!
+Omitted second power supply on output, higher
+value pullup resistors should be sufficient.</text>
+<text x="88.9" y="-35.56" size="1.778" layer="97">* Needs testing!
+Omitted second power supply on output, higher
+value pullup resistors should be sufficient.</text>
 </plain>
 <instances>
 <instance part="XDRIVER" gate="G$1" x="50.8" y="93.98"/>
@@ -16190,10 +16198,10 @@ Source: www.kingbright.com</description>
 <instance part="DB" gate="-11" x="182.88" y="48.26"/>
 <instance part="DB" gate="-12" x="182.88" y="2.54"/>
 <instance part="DB" gate="-13" x="182.88" y="-43.18"/>
-<instance part="DB" gate="-14" x="187.96" y="165.1" rot="R90"/>
+<instance part="DB" gate="-14" x="238.76" y="-27.94" rot="R180"/>
 <instance part="DB" gate="-15" x="182.88" y="134.62" rot="MR180"/>
-<instance part="DB" gate="-16" x="185.42" y="165.1" rot="R90"/>
-<instance part="DB" gate="-17" x="190.5" y="165.1" rot="R90"/>
+<instance part="DB" gate="-16" x="238.76" y="-30.48" rot="R180"/>
+<instance part="DB" gate="-17" x="238.76" y="-25.4" rot="R180"/>
 <instance part="DB" gate="-18" x="238.76" y="7.62" rot="R180"/>
 <instance part="DB" gate="-19" x="238.76" y="5.08" rot="R180"/>
 <instance part="DB" gate="-20" x="238.76" y="2.54" rot="R180"/>
@@ -16389,14 +16397,38 @@ Source: www.kingbright.com</description>
 <instance part="SUPPLY48" gate="GND" x="248.92" y="27.94" rot="R90"/>
 <instance part="X1" gate="-1" x="231.14" y="20.32" rot="R90"/>
 <instance part="X1" gate="-2" x="243.84" y="20.32" rot="R90"/>
-<instance part="XC1" gate="G$1" x="236.22" y="30.48" rot="R90"/>
-<instance part="YC1" gate="G$1" x="236.22" y="45.72" rot="R90"/>
-<instance part="ZC1" gate="G$1" x="236.22" y="60.96" rot="R90"/>
-<instance part="AC1" gate="G$1" x="236.22" y="76.2" rot="R90"/>
-<instance part="XC2" gate="G$1" x="236.22" y="38.1" rot="R90"/>
-<instance part="YC2" gate="G$1" x="236.22" y="53.34" rot="R90"/>
-<instance part="ZC2" gate="G$1" x="236.22" y="68.58" rot="R90"/>
-<instance part="AC2" gate="G$1" x="236.22" y="83.82" rot="R90"/>
+<instance part="XC1" gate="G$1" x="236.22" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="244.856" y="33.655" size="1.778" layer="95"/>
+<attribute name="VALUE" x="244.856" y="31.369" size="1.778" layer="96"/>
+</instance>
+<instance part="YC1" gate="G$1" x="236.22" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="244.856" y="48.895" size="1.778" layer="95"/>
+<attribute name="VALUE" x="244.856" y="46.609" size="1.778" layer="96"/>
+</instance>
+<instance part="ZC1" gate="G$1" x="236.22" y="60.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="244.856" y="64.135" size="1.778" layer="95"/>
+<attribute name="VALUE" x="244.856" y="61.849" size="1.778" layer="96"/>
+</instance>
+<instance part="AC1" gate="G$1" x="236.22" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="244.856" y="79.375" size="1.778" layer="95"/>
+<attribute name="VALUE" x="244.856" y="77.089" size="1.778" layer="96"/>
+</instance>
+<instance part="XC2" gate="G$1" x="236.22" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="244.856" y="41.275" size="1.778" layer="95"/>
+<attribute name="VALUE" x="244.856" y="38.989" size="1.778" layer="96"/>
+</instance>
+<instance part="YC2" gate="G$1" x="236.22" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="244.856" y="56.515" size="1.778" layer="95"/>
+<attribute name="VALUE" x="244.856" y="54.229" size="1.778" layer="96"/>
+</instance>
+<instance part="ZC2" gate="G$1" x="236.22" y="68.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="244.856" y="71.755" size="1.778" layer="95"/>
+<attribute name="VALUE" x="244.856" y="69.469" size="1.778" layer="96"/>
+</instance>
+<instance part="AC2" gate="G$1" x="236.22" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="244.856" y="86.995" size="1.778" layer="95"/>
+<attribute name="VALUE" x="244.856" y="84.709" size="1.778" layer="96"/>
+</instance>
 <instance part="LED1" gate="G$1" x="236.22" y="101.6" rot="R90"/>
 <instance part="RLED" gate="G$1" x="231.14" y="93.98" rot="R270"/>
 <instance part="FRAME1" gate="G$1" x="-147.32" y="-93.98"/>
@@ -16422,7 +16454,7 @@ Source: www.kingbright.com</description>
 <instance part="P+24" gate="VCC" x="165.1" y="-25.4" smashed="yes">
 <attribute name="VALUE" x="165.1" y="-22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="RLED1" gate="G$1" x="231.14" y="149.86" rot="R90"/>
+<instance part="RLED1" gate="G$1" x="231.14" y="149.86" rot="MR90"/>
 <instance part="LED2" gate="G$1" x="236.22" y="157.48" rot="R90"/>
 <instance part="JP1" gate="G$1" x="20.32" y="144.78" rot="R90"/>
 <instance part="JP2" gate="G$1" x="25.4" y="144.78" rot="R90"/>
@@ -16442,10 +16474,22 @@ Source: www.kingbright.com</description>
 <instance part="JP16" gate="G$1" x="86.36" y="78.74" rot="R90"/>
 <instance part="JP17" gate="G$1" x="81.28" y="124.46" rot="R90"/>
 <instance part="JP18" gate="G$1" x="86.36" y="124.46" rot="R90"/>
-<instance part="AC4" gate="G$1" x="7.62" y="81.28"/>
-<instance part="AC5" gate="G$1" x="7.62" y="35.56"/>
-<instance part="AC6" gate="G$1" x="7.62" y="-10.16"/>
-<instance part="AC7" gate="G$1" x="7.62" y="-55.88"/>
+<instance part="XC3" gate="G$1" x="7.62" y="81.28" smashed="yes">
+<attribute name="NAME" x="9.398" y="74.803" size="1.778" layer="95"/>
+<attribute name="VALUE" x="8.636" y="77.089" size="1.778" layer="96"/>
+</instance>
+<instance part="YC3" gate="G$1" x="7.62" y="35.56" smashed="yes">
+<attribute name="NAME" x="9.398" y="29.337" size="1.778" layer="95"/>
+<attribute name="VALUE" x="8.636" y="31.369" size="1.778" layer="96"/>
+</instance>
+<instance part="ZC3" gate="G$1" x="7.62" y="-10.16" smashed="yes">
+<attribute name="NAME" x="9.398" y="-16.637" size="1.778" layer="95"/>
+<attribute name="VALUE" x="8.636" y="-14.351" size="1.778" layer="96"/>
+</instance>
+<instance part="AC3" gate="G$1" x="7.62" y="-55.88" smashed="yes">
+<attribute name="NAME" x="9.398" y="-62.357" size="1.778" layer="95"/>
+<attribute name="VALUE" x="8.636" y="-60.071" size="1.778" layer="96"/>
+</instance>
 <instance part="SUPPLY51" gate="GND" x="7.62" y="73.66" smashed="yes">
 <attribute name="VALUE" x="5.715" y="74.295" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -16888,19 +16932,19 @@ Source: www.kingbright.com</description>
 <wire x1="243.84" y1="157.48" x2="243.84" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="AC4" gate="G$1" pin="2"/>
+<pinref part="XC3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY51" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="AC5" gate="G$1" pin="2"/>
+<pinref part="YC3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY52" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="AC6" gate="G$1" pin="2"/>
+<pinref part="ZC3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY53" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="AC7" gate="G$1" pin="2"/>
+<pinref part="AC3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY54" gate="GND" pin="GND"/>
 </segment>
 </net>
@@ -17542,7 +17586,7 @@ Source: www.kingbright.com</description>
 <wire x1="15.24" y1="86.36" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
 <junction x="7.62" y="91.44"/>
 <junction x="7.62" y="88.9"/>
-<pinref part="AC4" gate="G$1" pin="1"/>
+<pinref part="XC3" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="83.82" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
 <junction x="7.62" y="86.36"/>
 </segment>
@@ -17567,7 +17611,7 @@ Source: www.kingbright.com</description>
 <wire x1="15.24" y1="-50.8" x2="7.62" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="7.62" y="-45.72"/>
 <junction x="7.62" y="-48.26"/>
-<pinref part="AC7" gate="G$1" pin="1"/>
+<pinref part="AC3" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="-53.34" x2="7.62" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="7.62" y="-50.8"/>
 </segment>
@@ -17592,7 +17636,7 @@ Source: www.kingbright.com</description>
 <wire x1="15.24" y1="-5.08" x2="7.62" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="7.62" y="0"/>
 <junction x="7.62" y="-2.54"/>
-<pinref part="AC6" gate="G$1" pin="1"/>
+<pinref part="ZC3" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="7.62" y="-5.08"/>
 </segment>
@@ -17617,7 +17661,7 @@ Source: www.kingbright.com</description>
 <wire x1="15.24" y1="40.64" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
 <junction x="7.62" y="45.72"/>
 <junction x="7.62" y="43.18"/>
-<pinref part="AC5" gate="G$1" pin="1"/>
+<pinref part="YC3" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="38.1" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
 <junction x="7.62" y="40.64"/>
 </segment>
@@ -17843,4 +17887,10 @@ Source: www.kingbright.com</description>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

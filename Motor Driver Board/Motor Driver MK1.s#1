@@ -15826,192 +15826,6 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="RaspberryPi">
-<packages>
-<package name="RASPBERRY-PI">
-<wire x1="82.6" y1="5.275" x2="-2.4" y2="5.275" width="0.127" layer="51"/>
-<wire x1="-2.4" y1="5.275" x2="-2.4" y2="-6.225" width="0.127" layer="51"/>
-<wire x1="-2.4" y1="-34.025" x2="-2.4" y2="-50.725" width="0.127" layer="51"/>
-<wire x1="-2.4" y1="-50.725" x2="82.6" y2="-50.725" width="0.127" layer="51"/>
-<wire x1="82.6" y1="-50.725" x2="82.6" y2="5.275" width="0.127" layer="51"/>
-<wire x1="-0.925" y1="0.925" x2="0.925" y2="0.925" width="0.127" layer="21"/>
-<wire x1="0.925" y1="0.925" x2="0.925" y2="-0.925" width="0.127" layer="21" curve="1.965897"/>
-<wire x1="0.925" y1="-0.925" x2="-0.925" y2="-0.925" width="0.127" layer="21"/>
-<wire x1="-0.925" y1="-0.925" x2="-0.925" y2="0.925" width="0.127" layer="21"/>
-<wire x1="-2.4" y1="-6.225" x2="16.6" y2="-6.225" width="0.127" layer="51"/>
-<wire x1="16.6" y1="-6.225" x2="16.6" y2="-34.025" width="0.127" layer="51"/>
-<wire x1="16.6" y1="-34.025" x2="-2.4" y2="-34.025" width="0.127" layer="51"/>
-<wire x1="-2.4" y1="-34.025" x2="-2.4" y2="-6.225" width="0.127" layer="51"/>
-<wire x1="73.1" y1="-13.525" x2="90.3" y2="-13.525" width="0.127" layer="51"/>
-<wire x1="90.3" y1="-13.525" x2="90.3" y2="-26.775" width="0.127" layer="51"/>
-<wire x1="90.3" y1="-26.775" x2="73.1" y2="-26.775" width="0.127" layer="51"/>
-<wire x1="73.1" y1="-26.775" x2="73.1" y2="-13.525" width="0.127" layer="51"/>
-<wire x1="61.8" y1="-48.725" x2="83.6" y2="-48.725" width="0.127" layer="51"/>
-<wire x1="83.6" y1="-48.725" x2="83.6" y2="-33.325" width="0.127" layer="51"/>
-<wire x1="83.6" y1="-33.325" x2="61.8" y2="-33.325" width="0.127" layer="51"/>
-<wire x1="61.8" y1="-33.325" x2="61.8" y2="-48.725" width="0.127" layer="51"/>
-<wire x1="2.7" y1="-47.1" x2="-2.9" y2="-47.1" width="0.127" layer="51"/>
-<wire x1="-2.9" y1="-47.1" x2="-2.9" y2="-39.5" width="0.127" layer="51"/>
-<wire x1="-2.9" y1="-39.5" x2="2.7" y2="-39.5" width="0.127" layer="51"/>
-<wire x1="2.7" y1="-39.5" x2="2.7" y2="-47.1" width="0.127" layer="51"/>
-<wire x1="-1.4" y1="-1.225" x2="31.8" y2="-1.225" width="0.127" layer="21"/>
-<wire x1="31.8" y1="-1.225" x2="31.8" y2="3.775" width="0.127" layer="21"/>
-<wire x1="31.8" y1="3.775" x2="-1.4" y2="3.775" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="3.775" x2="-1.4" y2="-1.225" width="0.127" layer="21"/>
-<wire x1="-2.4" y1="-6.225" x2="-17.4" y2="-6.225" width="0.05" layer="51"/>
-<wire x1="-17.4" y1="-6.225" x2="-17.4" y2="-34.025" width="0.05" layer="51"/>
-<wire x1="-17.4" y1="-34.025" x2="-2.3" y2="-34.025" width="0.05" layer="51"/>
-<wire x1="-2.3" y1="-34.025" x2="-2.3" y2="-34.125" width="0.05" layer="51"/>
-<wire x1="38.61" y1="3.16" x2="38.61" y2="11.46" width="0.127" layer="51"/>
-<wire x1="38.61" y1="11.46" x2="47.51" y2="11.36" width="0.127" layer="51"/>
-<wire x1="47.51" y1="11.36" x2="47.51" y2="3.06" width="0.127" layer="51"/>
-<wire x1="47.51" y1="3.06" x2="38.22" y2="3.16" width="0.127" layer="51"/>
-<wire x1="38.17" y1="-6.85" x2="47.97" y2="-6.95" width="0.127" layer="51"/>
-<wire x1="47.97" y1="-6.95" x2="47.97" y2="3.05" width="0.127" layer="51"/>
-<wire x1="47.97" y1="3.05" x2="38.17" y2="3.15" width="0.127" layer="51"/>
-<wire x1="38.17" y1="3.15" x2="38.17" y2="-6.85" width="0.127" layer="51"/>
-<wire x1="68.6" y1="5.3" x2="68.6" y2="-6.1" width="0.127" layer="51"/>
-<wire x1="68.6" y1="-6.1" x2="56.6" y2="-6.1" width="0.127" layer="51"/>
-<wire x1="56.6" y1="-6.1" x2="56.6" y2="5.3" width="0.127" layer="51"/>
-<wire x1="65.9" y1="5.3" x2="66" y2="5.3" width="0.127" layer="51"/>
-<wire x1="66" y1="5.3" x2="66" y2="8.9" width="0.127" layer="51"/>
-<wire x1="66" y1="8.9" x2="59.4" y2="8.9" width="0.127" layer="51"/>
-<wire x1="59.4" y1="8.9" x2="59.4" y2="5.3" width="0.127" layer="51"/>
-<wire x1="35.1" y1="-51.9" x2="50.2" y2="-51.9" width="0.127" layer="51"/>
-<wire x1="50.2" y1="-51.9" x2="50.2" y2="-40.5" width="0.127" layer="51"/>
-<wire x1="50.2" y1="-40.5" x2="35.1" y2="-40.5" width="0.127" layer="51"/>
-<wire x1="35.1" y1="-40.5" x2="35.1" y2="-51.9" width="0.127" layer="51"/>
-<circle x="0.078" y="3.0996" radius="1.0152" width="0.1524" layer="52"/>
-<circle x="5.158" y="3.0996" radius="1.0152" width="0.1524" layer="52"/>
-<pad name="1" x="0" y="0" drill="1" shape="square"/>
-<pad name="2" x="0" y="2.54" drill="1" diameter="1.6764"/>
-<pad name="3" x="2.54" y="0" drill="1"/>
-<pad name="4" x="2.54" y="2.54" drill="1"/>
-<pad name="5" x="5.08" y="0" drill="1"/>
-<pad name="6" x="5.08" y="2.54" drill="1" diameter="1.6764"/>
-<pad name="7" x="7.62" y="0" drill="1"/>
-<pad name="8" x="7.62" y="2.54" drill="1"/>
-<pad name="9" x="10.16" y="0" drill="1"/>
-<pad name="10" x="10.16" y="2.54" drill="1"/>
-<pad name="11" x="12.7" y="0" drill="1"/>
-<pad name="12" x="12.7" y="2.54" drill="1"/>
-<pad name="13" x="15.24" y="0" drill="1"/>
-<pad name="14" x="15.24" y="2.54" drill="1"/>
-<pad name="15" x="17.78" y="0" drill="1"/>
-<pad name="16" x="17.78" y="2.54" drill="1"/>
-<pad name="17" x="20.32" y="0" drill="1"/>
-<pad name="18" x="20.32" y="2.54" drill="1"/>
-<pad name="19" x="22.86" y="0" drill="1"/>
-<pad name="20" x="22.86" y="2.54" drill="1"/>
-<pad name="21" x="25.4" y="0" drill="1"/>
-<pad name="22" x="25.4" y="2.54" drill="1"/>
-<pad name="23" x="27.94" y="0" drill="1"/>
-<pad name="24" x="27.94" y="2.54" drill="1"/>
-<pad name="25" x="30.48" y="0" drill="1"/>
-<pad name="26" x="30.48" y="2.54" drill="1"/>
-<text x="10" y="-3" size="1.27" layer="25" ratio="10" rot="R180">&gt;NAME</text>
-<text x="0.5" y="-2.5" size="1.27" layer="21" ratio="10" rot="R180">1</text>
-<text x="34" y="3.5" size="1.27" layer="21" ratio="10" rot="R180">26</text>
-<text x="23.5" y="-3" size="1.27" layer="27" ratio="10" rot="R180">&gt;VALUE</text>
-<text x="7.7286" y="-24.3961" size="1.27" layer="51" rot="R90">SD Card </text>
-<text x="-0.4964" y="-1.6961" size="0.4064" layer="51">3v3</text>
-<text x="-0.3714" y="3.9289" size="0.4064" layer="51">5v</text>
-<text x="4.2786" y="3.8789" size="0.4064" layer="51">GND</text>
-<text x="87.69" y="-22.05" size="1.27" layer="51" rot="R90">USB</text>
-<text x="81.24" y="-42.15" size="1.27" layer="51" rot="R90">RJ45</text>
-<text x="0.215" y="-46.425" size="1.27" layer="51" rot="R90">usb +5V</text>
-<text x="12.5" y="-32.225" size="1.27" layer="51" rot="R90">SD card holder 5mm bottom sick</text>
-<text x="34" y="0.5" size="1.27" layer="21" ratio="10" rot="R180">25</text>
-<text x="34.4" y="-22.4" size="1.27" layer="51">Board 56x85mm H=16mm</text>
-<text x="60.35" y="2.475" size="1.27" layer="51">Audio</text>
-<text x="41.2" y="1.15" size="1.27" layer="51">RCA</text>
-<text x="39.975" y="-46.925" size="1.27" layer="51">HDMI</text>
-</package>
-</packages>
-<symbols>
-<symbol name="RASPBERRY-PI">
-<wire x1="-15.24" y1="53.34" x2="22.86" y2="53.34" width="0.254" layer="94"/>
-<wire x1="22.86" y1="53.34" x2="22.86" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-12.7" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-12.7" x2="-15.24" y2="53.34" width="0.254" layer="94"/>
-<pin name="1-+3V3" x="-20.32" y="50.8" length="middle"/>
-<pin name="2-+5V" x="27.94" y="50.8" length="middle" rot="R180"/>
-<pin name="3-SDA0" x="-20.32" y="45.72" length="middle"/>
-<pin name="4-DNC" x="27.94" y="45.72" length="middle" rot="R180"/>
-<pin name="5-SCL0" x="-20.32" y="40.64" length="middle"/>
-<pin name="6-GND" x="27.94" y="40.64" length="middle" rot="R180"/>
-<pin name="7-GPIO7" x="-20.32" y="35.56" length="middle"/>
-<pin name="8-TX" x="27.94" y="35.56" length="middle" rot="R180"/>
-<pin name="9-DNC" x="-20.32" y="30.48" length="middle"/>
-<pin name="10-RX" x="27.94" y="30.48" length="middle" rot="R180"/>
-<pin name="11-GPIO0" x="-20.32" y="25.4" length="middle"/>
-<pin name="12-GPIO1" x="27.94" y="25.4" length="middle" rot="R180"/>
-<pin name="13-GPIO2" x="-20.32" y="20.32" length="middle"/>
-<pin name="14-DNC" x="27.94" y="20.32" length="middle" rot="R180"/>
-<pin name="15-GPIO3" x="-20.32" y="15.24" length="middle"/>
-<pin name="16-GPIO4" x="27.94" y="15.24" length="middle" rot="R180"/>
-<pin name="17-DNC" x="-20.32" y="10.16" length="middle"/>
-<pin name="18-GPIO5" x="27.94" y="10.16" length="middle" rot="R180"/>
-<pin name="19-SPI-MOSI" x="-20.32" y="5.08" length="middle"/>
-<pin name="20-DNC" x="27.94" y="5.08" length="middle" rot="R180"/>
-<pin name="21-SPI-MISO" x="-20.32" y="0" length="middle"/>
-<pin name="22-GPIO6" x="27.94" y="0" length="middle" rot="R180"/>
-<pin name="23-SPI-SCLK" x="-20.32" y="-5.08" length="middle"/>
-<pin name="24-SPI-CE0-N" x="27.94" y="-5.08" length="middle" rot="R180"/>
-<pin name="25-DNC" x="-20.32" y="-10.16" length="middle"/>
-<pin name="26-SPI-CE1-N" x="27.94" y="-10.16" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="RASPBERRY-PI">
-<description>&lt;b&gt;&lt;a href="http://www.raspberrypi.org/"&gt;Raspberry Pi Board&lt;/a&gt;&lt;b&gt;&lt;br&gt;
-&lt;br&gt;Jacques Lagnel V1.0 (beta) 2012&lt;br&gt;&lt;br&gt;
-
-Board dimension:&lt;br&gt;
-&lt;a href="http://www.raspberrypi.org/forum/general-discussion/mechanical-profile-3d-models?value=3d%20model&amp;type=1&amp;include=1&amp;search=1&amp;ret=all"&gt;Forum 3D model&lt;/a&gt;&lt;br&gt;
-The GPIO Connector (P1):&lt;br&gt;
-&lt;a href="http://elinux.org/RPi_Low-level_peripherals"&gt;http://elinux.org/RPi_Low-level_peripherals&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RASPBERRY-PI" x="-2.54" y="-20.32"/>
-</gates>
-<devices>
-<device name="" package="RASPBERRY-PI">
-<connects>
-<connect gate="G$1" pin="1-+3V3" pad="1"/>
-<connect gate="G$1" pin="10-RX" pad="10"/>
-<connect gate="G$1" pin="11-GPIO0" pad="11"/>
-<connect gate="G$1" pin="12-GPIO1" pad="12"/>
-<connect gate="G$1" pin="13-GPIO2" pad="13"/>
-<connect gate="G$1" pin="14-DNC" pad="14"/>
-<connect gate="G$1" pin="15-GPIO3" pad="15"/>
-<connect gate="G$1" pin="16-GPIO4" pad="16"/>
-<connect gate="G$1" pin="17-DNC" pad="17"/>
-<connect gate="G$1" pin="18-GPIO5" pad="18"/>
-<connect gate="G$1" pin="19-SPI-MOSI" pad="19"/>
-<connect gate="G$1" pin="2-+5V" pad="2"/>
-<connect gate="G$1" pin="20-DNC" pad="20"/>
-<connect gate="G$1" pin="21-SPI-MISO" pad="21"/>
-<connect gate="G$1" pin="22-GPIO6" pad="22"/>
-<connect gate="G$1" pin="23-SPI-SCLK" pad="23"/>
-<connect gate="G$1" pin="24-SPI-CE0-N" pad="24"/>
-<connect gate="G$1" pin="25-DNC" pad="25"/>
-<connect gate="G$1" pin="26-SPI-CE1-N" pad="26"/>
-<connect gate="G$1" pin="3-SDA0" pad="3"/>
-<connect gate="G$1" pin="4-DNC" pad="4"/>
-<connect gate="G$1" pin="5-SCL0" pad="5"/>
-<connect gate="G$1" pin="6-GND" pad="6"/>
-<connect gate="G$1" pin="7-GPIO7" pad="7"/>
-<connect gate="G$1" pin="8-TX" pad="8"/>
-<connect gate="G$1" pin="9-DNC" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="burr-brown">
 <description>&lt;b&gt;Burr-Brown Components&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -16264,7 +16078,6 @@ The GPIO Connector (P1):&lt;br&gt;
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="RLED" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
-<part name="U$1" library="RaspberryPi" deviceset="RASPBERRY-PI" device=""/>
 <part name="IC1" library="burr-brown" deviceset="REG1117" device=""/>
 <part name="SUPPLY49" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY50" library="supply2" deviceset="GND" device=""/>
@@ -16588,12 +16401,11 @@ The GPIO Connector (P1):&lt;br&gt;
 <instance part="RLED" gate="G$1" x="231.14" y="93.98" rot="R270"/>
 <instance part="FRAME1" gate="G$1" x="-147.32" y="-93.98"/>
 <instance part="FRAME1" gate="G$2" x="177.8" y="-93.98"/>
-<instance part="U$1" gate="G$1" x="-109.22" y="111.76"/>
-<instance part="IC1" gate="G$1" x="220.98" y="137.16"/>
-<instance part="SUPPLY49" gate="1" x="205.74" y="137.16" rot="R90"/>
-<instance part="SUPPLY50" gate="GND" x="220.98" y="116.84"/>
-<instance part="P+19" gate="VCC" x="236.22" y="142.24" smashed="yes">
-<attribute name="VALUE" x="236.22" y="144.78" size="1.778" layer="96" rot="R90"/>
+<instance part="IC1" gate="G$1" x="231.14" y="127" rot="R90"/>
+<instance part="SUPPLY49" gate="1" x="226.06" y="111.76" rot="R90"/>
+<instance part="SUPPLY50" gate="GND" x="251.46" y="127" rot="R90"/>
+<instance part="P+19" gate="VCC" x="226.06" y="142.24" smashed="yes" rot="R90">
+<attribute name="VALUE" x="223.52" y="142.24" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="P+20" gate="VCC" x="165.1" y="152.4" smashed="yes">
 <attribute name="VALUE" x="165.1" y="154.94" size="1.778" layer="96" rot="R90"/>
@@ -16610,8 +16422,8 @@ The GPIO Connector (P1):&lt;br&gt;
 <instance part="P+24" gate="VCC" x="165.1" y="-25.4" smashed="yes">
 <attribute name="VALUE" x="165.1" y="-22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="RLED1" gate="G$1" x="243.84" y="137.16"/>
-<instance part="LED2" gate="G$1" x="251.46" y="132.08"/>
+<instance part="RLED1" gate="G$1" x="231.14" y="149.86" rot="R90"/>
+<instance part="LED2" gate="G$1" x="236.22" y="157.48" rot="R90"/>
 <instance part="JP1" gate="G$1" x="20.32" y="144.78" rot="R90"/>
 <instance part="JP2" gate="G$1" x="25.4" y="144.78" rot="R90"/>
 <instance part="JP3" gate="G$1" x="20.32" y="116.84" rot="R90"/>
@@ -16871,6 +16683,8 @@ The GPIO Connector (P1):&lt;br&gt;
 <segment>
 <pinref part="IC1" gate="G$1" pin="VIN"/>
 <pinref part="SUPPLY49" gate="1" pin="V+"/>
+<wire x1="228.6" y1="111.76" x2="231.14" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="111.76" x2="231.14" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -17068,12 +16882,10 @@ The GPIO Connector (P1):&lt;br&gt;
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY50" gate="GND" pin="GND"/>
-<wire x1="220.98" y1="119.38" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="127" x2="243.84" y2="127" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="251.46" y1="127" x2="251.46" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="124.46" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="127" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="157.48" x2="243.84" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="157.48" x2="243.84" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="AC4" gate="G$1" pin="2"/>
@@ -17679,11 +17491,10 @@ The GPIO Connector (P1):&lt;br&gt;
 <segment>
 <pinref part="IC1" gate="G$1" pin="VOUT"/>
 <pinref part="P+19" gate="VCC" pin="VCC"/>
-<wire x1="236.22" y1="139.7" x2="236.22" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="137.16" x2="233.68" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="134.62" x2="236.22" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="142.24" x2="231.14" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="142.24" x2="231.14" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="RLED1" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="137.16" x2="238.76" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="142.24" x2="231.14" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="FAULT_UP" gate="G$1" pin="2"/>
@@ -17751,7 +17562,6 @@ The GPIO Connector (P1):&lt;br&gt;
 <pinref part="ASET" gate="A" pin="2"/>
 <pinref part="ASET" gate="A" pin="4"/>
 <wire x1="7.62" y1="-45.72" x2="15.24" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="-45.72" x2="15.24" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="-48.26" x2="7.62" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="ASET" gate="A" pin="6"/>
 <wire x1="15.24" y1="-50.8" x2="7.62" y2="-50.8" width="0.1524" layer="91"/>
@@ -17886,8 +17696,8 @@ The GPIO Connector (P1):&lt;br&gt;
 <segment>
 <pinref part="RLED1" gate="G$1" pin="2"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="248.92" y1="137.16" x2="251.46" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="137.16" x2="251.46" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="154.94" x2="231.14" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="157.48" x2="233.68" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
