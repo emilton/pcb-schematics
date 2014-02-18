@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -60,7 +60,6 @@
 <wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
 <wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
 <wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="0" y1="0" x2="0" y2="69.215" x3="-3.81" y3="34.6075" textsize="1.27" layer="19" dtype="vertical" unit="inch" precision="5"/>
 </plain>
 <libraries>
 <library name="con-thomas-betts">
@@ -117,6 +116,50 @@ Packages changed/corrected 22.02.2006 librarian@cadsoft.de&lt;br&gt;
 <text x="-15.875" y="5.715" size="1.27" layer="27">&gt;VALUE</text>
 <hole x="-23.5204" y="0" drill="3.048"/>
 <hole x="23.5204" y="0" drill="3.048"/>
+</package>
+</packages>
+</library>
+<library name="RaspberryPi">
+<packages>
+<package name="HSN1000L">
+<pad name="P$1" x="0" y="3.81" drill="0.8" shape="offset" rot="R90"/>
+<pad name="P$2" x="0" y="-3.81" drill="0.8" shape="offset" rot="R270"/>
+<pad name="P$3" x="2.54" y="-3.81" drill="0.8" shape="offset" rot="R270"/>
+<pad name="P$4" x="5.08" y="-3.81" drill="0.8" shape="offset" rot="R270"/>
+<pad name="P$5" x="7.62" y="-3.81" drill="0.8" shape="offset" rot="R270"/>
+<pad name="P$6" x="-2.54" y="-3.81" drill="0.8" shape="offset" rot="R270"/>
+<pad name="P$7" x="-5.08" y="-3.81" drill="0.8" shape="offset" rot="R270"/>
+<pad name="P$8" x="-7.62" y="-3.81" drill="0.8" shape="offset" rot="R270"/>
+<pad name="P$9" x="-2.54" y="3.81" drill="0.8" shape="offset" rot="R90"/>
+<pad name="P$10" x="-5.08" y="3.81" drill="0.8" shape="offset" rot="R90"/>
+<pad name="P$11" x="-7.62" y="3.81" drill="0.8" shape="offset" rot="R90"/>
+<pad name="P$12" x="2.54" y="3.81" drill="0.8" shape="offset" rot="R90"/>
+<pad name="P$13" x="5.08" y="3.81" drill="0.8" shape="offset" rot="R90"/>
+<pad name="P$14" x="7.62" y="3.81" drill="0.8" shape="offset" rot="R90"/>
+<wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-6.35" x2="7.62" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-6.35" x2="8.89" y2="-5.08" width="0.127" layer="21" curve="90"/>
+<wire x1="7.62" y1="6.35" x2="8.89" y2="5.08" width="0.127" layer="21" curve="-90"/>
+<wire x1="-7.62" y1="-6.35" x2="-8.89" y2="-5.08" width="0.127" layer="21" curve="-90"/>
+<wire x1="-8.89" y1="5.08" x2="-7.62" y2="6.35" width="0.127" layer="21" curve="-90"/>
+<wire x1="-8.89" y1="-5.08" x2="-8.89" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="5.08" x2="-8.89" y2="1.27" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-5.08" x2="8.89" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="1.27" x2="-8.89" y2="-1.27" width="0.127" layer="21" curve="-180"/>
+<circle x="-4.7625" y="0" radius="0.3175" width="0.127" layer="21"/>
+<wire x1="-6.141453125" y1="0.813253125" x2="-5.3165625" y2="0.337003125" width="0.127" layer="21"/>
+<wire x1="-3.370846875" y1="-0.800553125" x2="-4.1957375" y2="-0.324303125" width="0.127" layer="21"/>
+<wire x1="-5.288553125" y1="-0.350159375" x2="-6.113440625" y2="-0.8264125" width="0.127" layer="21"/>
+<wire x1="-4.249146875" y1="0.362859375" x2="-3.424259375" y2="0.8391125" width="0.127" layer="21"/>
+<wire x1="-4.77179375" y1="0.664715625" x2="-4.771796875" y2="1.617215625" width="0.127" layer="21"/>
+<wire x1="-4.77179375" y1="-1.583184375" x2="-4.771796875" y2="-0.630684375" width="0.127" layer="21"/>
+<wire x1="-4.2291" y1="-0.3429" x2="-4.7117" y2="-0.6223" width="0.127" layer="21" curve="-52.597915"/>
+<wire x1="-3.3655" y1="-0.8001" x2="-4.7625" y2="-1.6129" width="0.127" layer="21" curve="-59.808377"/>
+<wire x1="-5.2959" y1="-0.3429" x2="-5.3213" y2="0.3175" width="0.127" layer="21" curve="-62.339677"/>
+<wire x1="-6.1341" y1="-0.8255" x2="-6.1595" y2="0.8255" width="0.127" layer="21" curve="-61.621189"/>
+<wire x1="-4.7625" y1="0.6477" x2="-4.2545" y2="0.3683" width="0.127" layer="21" curve="-55.00798"/>
+<wire x1="-4.7625" y1="1.6129" x2="-3.4163" y2="0.8509" width="0.127" layer="21" curve="-58.228826"/>
+<circle x="-4.7625" y="0" radius="2.00804375" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -306,14 +349,27 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="X1" library="con-thomas-betts" package="H2M25ST" value="D-SUB25-H2M25ST" x="-39.37" y="6.35">
+<element name="X1" library="con-thomas-betts" package="H2M25ST" value="D-SUB25-H2M25ST" x="-39.37" y="20.32">
 <attribute name="OC_NEWARK" value="unknown" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
+<element name="U$1" library="RaspberryPi" package="HSN1000L" value="HSN1000" x="-22.86" y="7.62"/>
 </elements>
 <signals>
+<signal name="VL">
+<contactref element="U$1" pad="P$1"/>
+</signal>
+<signal name="GND">
+<contactref element="U$1" pad="P$7"/>
+</signal>
+<signal name="VH">
+<contactref element="U$1" pad="P$14"/>
+</signal>
+<signal name="VB">
+<contactref element="U$1" pad="P$8"/>
+</signal>
 </signals>
 </board>
 </drawing>
